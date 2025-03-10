@@ -309,6 +309,67 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
     }
 </style>   
 
+<style>
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1a1a2e;
+        color: white;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .footer-services {
+        text-align: left;
+        margin-right: auto;
+        max-width: 200px;
+    }
+    .footer-services h4 {
+        margin-bottom: 10px;
+    }
+    .footer-services ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-services li {
+        margin-bottom: 5px;
+    }
+    .footer-social {
+        display: flex;
+        align-items: center;
+    }
+    .footer-social a {
+        margin-right: 10px;
+        color: white;
+        transition: transform 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+    }
+    .footer-social a svg {
+        width: 24px;
+        height: 24px;
+    }
+    .footer-social a:hover {
+        transform: scale(1.2);
+    }
+    .footer-copyright {
+        text-align: center;
+        flex-grow: 1;
+        font-size: 14px;
+    }
+    .footer-contact {
+        text-align: right;
+        margin-left: auto;
+    }
+    .footer-link {
+        color: #007bff;
+        text-decoration: none;
+    }
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+</style>
+
     
 </head>
 <body class="home page-template-default page page-id-9 wp-embed-responsive  oxygen-body" style="background-color: #3C3C3C;">
@@ -480,15 +541,53 @@ gform.initializeOnLoaded( function() {gformInitSpinner( 2, './elementisboilerexp
                 </div></div>
             </div
         </div>
-    <footer id="section-28-8" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="_social_icons-35-8" class="oxy-social-icons" ><a href='https://www.facebook.com/' target='_blank' class='oxy-social-icons-facebook'><svg><title>Visit our Facebook</title>
-    <use xlink:href='#oxy-social-icons-icon-facebook'></use></svg></a><a href='https://www.instagram.com/' target='_blank' class='oxy-social-icons-instagram'><svg><title>Visit our Instagram</title><use xlink:href='#oxy-social-icons-icon-instagram'></use></svg></a><a href='https://twitter.com/' target='_blank' class='oxy-social-icons-twitter'><svg><title>Visit our Twitter</title>
-    <use xlink:href='#oxy-social-icons-icon-twitter'></use></svg></a><a href='https://www.youtube.com/channel/' target='_blank' class='oxy-social-icons-youtube'><svg><title>Visit our YouTube channel</title>
-    <use xlink:href='#oxy-social-icons-icon-youtube'></use></svg></a></div>
-    <p id="text_block-29-8" class="ct-text-block footer-text" >©&nbsp;Mr Boiler Services</p><a id="text_block-30-8" class="ct-link-text footer-text footer-link" href="https://www.google.com/maps/place/Mr+Boiler+Services/@51.8894133,0.8438406,17z/data=!3m1!4b1!4m6!3m5!1s0x2c891b05106951dd:0x642b6f806c0ae64!8m2!3d51.88941!4d0.8464155!16s%2Fg%2F11w25x60kn?entry=ttu&g_ep=EgoyMDI1MDMwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" >10 London road, Stanway, Colchester, Essex. Co30ha</a><div id="div_block-99-8" class="ct-div-block" ><p id="text_block-88-8" class="ct-text-block footer-text" ></p>
-    <a id="link_text-74-8" class="ct-link-text footer-text footer-link" href="#" target="_blank" rel="noopener" >Company Number&nbsp;01206978443</a></div><div id="div_block-31-8" class="ct-div-block" ><a id="link_text-32-8" class="ct-link-text footer-text footer-link" href="legal-pages/index.html" target="_self"  ></a>
-    <a id="link_text-33-8" class="ct-link-text footer-text footer-link" href="#" target="_self"  ></a>
-    <a id="link_text-34-8" class="ct-link-text footer-text footer-link" href="http://" target="_self" rel="nofollow noopener" ></a></div>
-    <div id="text_block-101-8" class="ct-text-block footer-text" >MR Boiler Services Call the office now on 01206978443. If you would prefer to send an email you can do this buy clicking  here  and we contact you back as soon as we can. <br> &copy; 2025 ALL RIGHTS RESERVED BY MR. BOILER SERVICES .<br></div>
+        <footer id="section-28-8" class="ct-section">
+            <div class="ct-section-inner-wrap footer-container">
+                
+               
+        
+                <!-- Social Media Icons -->
+                <div class="footer-social">
+                    <a href='https://www.facebook.com/' target='_blank' class='oxy-social-icons-facebook'>
+                        <svg width="20" height="20"><title>Visit our Facebook</title><use xlink:href='#oxy-social-icons-icon-facebook'></use></svg>
+                    </a>
+                    <a href='https://www.instagram.com/' target='_blank' class='oxy-social-icons-instagram'>
+                        <svg width="20" height="20"><title>Visit our Instagram</title><use xlink:href='#oxy-social-icons-icon-instagram'></use></svg>
+                    </a>
+                    <a href='https://twitter.com/' target='_blank' class='oxy-social-icons-twitter'>
+                        <svg width="20" height="20"><title>Visit our Twitter</title><use xlink:href='#oxy-social-icons-icon-twitter'></use></svg>
+                    </a>
+                    <a href='https://www.youtube.com/channel/' target='_blank' class='oxy-social-icons-youtube'>
+                        <svg width="20" height="20"><title>Visit our YouTube channel</title><use xlink:href='#oxy-social-icons-icon-youtube'></use></svg>
+                    </a>
+                </div>
+                
+                 <!-- Services - Left -->
+                 <div class="footer-services">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li>Boiler Servicing and Repairs</li>
+                        <li>Central Heating Installations</li>
+                        <li>Plumbing Services</li>
+                        <li>Gas Safety Checks</li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Details - Right -->
+                <div class="footer-contact">
+                    <a href="https://www.google.com/maps/place/Mr+Boiler+Services/@51.8894133,0.8438406,17z/data=!3m1!4b1!4m6!3m5!1s0x2c891b05106951dd:0x642b6f806c0ae64!8m2!3d51.88941!4d0.8464155!16s%2Fg%2F11w25x60kn?entry=ttu&g_ep=EgoyMDI1MDMwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="footer-link">
+                        10 London Road, Stanway, Colchester, Essex. Co30ha
+                    </a>
+                    <p>Company Number: 01206978443</p>
+                    <p>Call us now: 01206978443</p>
+                </div>
+                <p>If you prefer email, click <a href="#" class="footer-link">here</a> and we'll contact you back as soon as possible.</p>
+                <!-- Copyright - Center -->
+                <div class="footer-copyright">
+                    <p>&copy; 2025 MR Boiler Services. All Rights Reserved.</p>
+                </div>
+            </div>
+        
     <div id="shortcode-75-8" class="ct-shortcode" >                <div  class="rplg" style="" data-id="1199"><div  class="rplg-badge-cnt                     rplg-badge_left-fixed                                         rplg-badge-hide        "><div class="rplg-badge2"                                data-provider="google"            ><div class="rplg-badge2-border"></div>
     <div class="rplg-badge2-btn rplg-badge2-clickable"                                    ><span class="rplg-badge-logo"></span><div class="rplg-badge2-score">
         <div>                        Google Rating                        </div>
