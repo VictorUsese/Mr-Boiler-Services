@@ -183,6 +183,13 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
     .features li {
         margin: 8px 0;
     }
+
+    .features li::before {
+            content: '\2713';
+            color: green;
+            font-weight: bold;
+            margin-right: 10px;
+        }
     .terms {
         margin-top: 25px;
         font-size: 16px;
@@ -333,6 +340,7 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
                 </div>
             </div>
             <script>
+                const features = document.querySelector('.features')
                 const plans = [
                     { 
                         name: "Basic", 
@@ -425,7 +433,7 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
                         <ul class="features">
                             ${plan.features.map(feature => `<li>✅ ${feature}</li>`).join('')}
                         </ul>
-                        <div class="terms">
+                        <div class="terms">✅
                             <label>
                                 <input type="checkbox" class="terms-checkbox"> I agree to the <a href="#">Terms & Conditions</a>
                             </label>
