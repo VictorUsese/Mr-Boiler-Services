@@ -128,72 +128,84 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
 
 
 <style>
-    .service-plans-page {
+    body {
         font-family: Arial, sans-serif;
         background: linear-gradient(to right, #1e3a8a, #2563eb);
         color: white;
         text-align: center;
         padding: 50px 20px;
     }
-    .container {
-        max-width: 1200px;
+    .service-plans-container {
+        max-width: 1400px;
         margin: auto;
         background: white;
         color: black;
-        padding: 30px;
+        padding: 50px;
         border-radius: 50px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     .plans {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
-        margin-top: 20px;
     }
     .plan {
-        background: #f9f9f9;
-        padding: 20px;
+        background: #3C3C3C;
+        padding: 30px;
         border-radius: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1 1 300px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
     }
     .plan h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 26px;
+        margin-bottom: 15px;
+        color: #FFD700;
     }
     .plan p {
         font-size: 18px;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        color: #FFFFFF;
     }
     .features {
         text-align: left;
-        font-size: 14px;
-        margin: 10px 0;
+        font-size: 16px;
+        margin: 15px 0;
+        width: 100%;
     }
     .features li {
-        margin: 5px 0;
+        margin: 8px 0;
     }
     .terms {
-        margin-top: 20px;
-        font-size: 14px;
+        margin-top: 25px;
+        font-size: 16px;
     }
     .btn {
-        background: #2563eb;
-        color: white;
-        padding: 10px;
+        background: #FFD700;
+        color: black;
+        padding: 12px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: 10px;
+        margin-top: 15px;
         width: 100%;
+        font-size: 16px;
     }
     .btn:hover {
-        background: #1e3a8a;
+        background: #FFC107;
     }
 </style>
 </head>
-<body class="page-template-default page page-id-163 wp-embed-responsive  oxygen-body" style="background-color: #3C3C3C;" class="service-plans-page">
-<div id="div_block-21-8" class="ct-div-block" ><a id="link-22-8" class="ct-link top-bar-col" href="tel:01206912068"   ><div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div><div id="text_block-24-8" class="ct-text-block" >01206 912068</div></a><a id="link-25-8" class="ct-link top-bar-col" href="../contact-us/index.html"   ><div id="fancy_icon-26-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-26-8"><use xlink:href="#FontAwesomeicon-pencil"></use></svg></div><div id="text_block-27-8" class="ct-text-block" >Online Quote</div></a></div><header id="div_block-64-8" class="ct-div-block" style="background-color: #3C3C3C;"><div id="div_block-60-8" class="ct-div-block inner-content" ><a id="logo-link" class="ct-link" href=".../index.html" target="_self"  ><img  id="logo" alt="elementis boiler experts logo " src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" style="height: 90px; width: 150px;" class="ct-image"/></a><a id="div_block-44-8" class="ct-link header-cta-wrap" href=".../index.html"   ><img fetchpriority="high"  id="image-100-8" alt="which trusted trader logo" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/></a><a id="div_block-53-8" class="ct-link header-cta-wrap" href="tel:01206912068"   ><img  id="image-55-8" alt="call" src="../wp-content/uploads/2022/08/call.svg" class="ct-image btn-call-img"/><div id="link_text-58-8" class="ct-text-block white-link text-top-margin" >01206 912068<br></div></a><a id="div_block-38-8" class="ct-link btn btn-green" href="#"   ><div id="text_block-39-8" class="ct-text-block" >Get A Plan</div></a></div><div id="div_block-72-8" class="ct-div-block" >
+<body class="page-template-default page page-id-163 wp-embed-responsive  oxygen-body" style="background-color: #3C3C3C;">
+<div id="div_block-21-8" class="ct-div-block" ><a id="link-22-8" class="ct-link top-bar-col" href="tel:01206912068"   ><div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div>
+<div id="text_block-24-8" class="ct-text-block" >01206 912068</div></a><a id="link-25-8" class="ct-link top-bar-col" href="../contact-us/index.html"   ><div id="fancy_icon-26-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-26-8"><use xlink:href="#FontAwesomeicon-pencil"></use></svg></div><div id="text_block-27-8" class="ct-text-block" >Online Quote</div></a></div><header id="div_block-64-8" class="ct-div-block" style="background-color: #3C3C3C;"><div id="div_block-60-8" class="ct-div-block inner-content" ><a id="logo-link" class="ct-link" href=".../index.html" target="_self"  ><img  id="logo" alt="elementis boiler experts logo " src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" style="height: 90px; width: 150px;" class="ct-image"/></a><a id="div_block-44-8" class="ct-link header-cta-wrap" href=".../index.html"   ><img fetchpriority="high"  id="image-100-8" alt="which trusted trader logo" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/></a><a id="div_block-53-8" class="ct-link header-cta-wrap" href="tel:01206912068"   ><img  id="image-55-8" alt="call" src="../wp-content/uploads/2022/08/call.svg" class="ct-image btn-call-img"/><div id="link_text-58-8" class="ct-text-block white-link text-top-margin" >01206 912068<br></div></a><a id="div_block-38-8" class="ct-link btn btn-green" href="#"   ><div id="text_block-39-8" class="ct-text-block" >Get A Plan</div></a></div><div id="div_block-72-8" class="ct-div-block" >
 		<div id="-pro-menu-73-8" class="oxy-pro-menu " ><div class="oxy-pro-menu-mobile-open-icon " data-off-canvas-alignment=""><svg id="-pro-menu-73-8-open-icon"><use xlink:href="#FontAwesomeicon-bars"></use></svg>Menu</div>
 
                 
@@ -244,91 +256,122 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
             });
             jQuery('#-pro-menu-73-8 .oxy-pro-menu-show-dropdown .menu-item:not(.menu-item-has-children) > a', 'body').each(function(){
                 jQuery(this).append('<div class="oxy-pro-menu-dropdown-icon-click-area"></div>');
-            });			</script></div></header><div id='inner_content-7-8' class='ct-inner-content'><div class="container">
-        <h1>Service Plans</h1>
-        <p>CHOOSE YOUR PRICING PLAN</p>
-        <div class="plans" id="plans-container"></div>
-    </div>
-    <script>
-        const plans = [
-            { 
-                name: "Basic", 
-                price: "£9 p/m", 
-                description: "Every Month • Minimum commitment: 12 months", 
-                features: [
-                    "Visual check of the boiler",
-                    "Gas valve settings check",
-                    "Calculation of gas rate"
-                ],
-                link: "https://pay.gocardless.com/BRT0003QEPP8N7F"
-            },
-            { 
-                name: "Advanced", 
-                price: "£12 p/m", 
-                description: "Every Month • Minimum commitment: 12 months", 
-                features: [
-                    "Check the combustion of the boiler",
-                    "Check the gas appliances for gas tightness",
-                    "Expansion vessel pressure check"
-                ],
-                link: "https://pay.gocardless.com/BRT0003QEPJ8N8G"
-            },
-            { 
-                name: "Boiler Ultimate", 
-                price: "£25 p/m", 
-                description: "Every Month • Minimum commitment: 12 months", 
-                features: [
-                    "Clean the condense trap",
-                    "Inhibitors level check",
-                    "Magnetic filter clean"
-                ],
-                link: "https://pay.gocardless.com/BRT0003QEPL9N9H"
-            },
-            { 
-                name: "Unvented Ultimate", 
-                price: "£35 p/m", 
-                description: "Every Month • Minimum commitment: 12 months", 
-                features: [
-                    "MBS Service member exclusive access",
-                    "Annual boiler service reminder",
-                    "Our engineers, No Sub-contracting"
-                ],
-                link: "https://pay.gocardless.com/BRT0003QEPM0N0I"
-            }
-        ];
-
-        const plansContainer = document.getElementById("plans-container");
-
-        plans.forEach((plan) => {
-            const planDiv = document.createElement("div");
-            planDiv.classList.add("plan");
-            planDiv.innerHTML = `
-                <h2>${plan.name}</h2>
-                <p>${plan.price}</p>
-                <p>${plan.description}</p>
-                <ul class="features">
-                    ${plan.features.map(feature => `<li>✅ ${feature}</li>`).join('')}
-                </ul>
-                <div class="terms">
-                    <label>
-                        <input type="checkbox" class="terms-checkbox"> I agree to the <a href="#">Terms & Conditions</a>
-                    </label>
-                </div>
-                <button class="btn" onclick="selectPlan(event, '${plan.link}')">Select Plan</button>
-            `;
-            plansContainer.appendChild(planDiv);
-        });
-
-        function selectPlan(event, link) {
-            const planDiv = event.target.closest(".plan");
-            const termsCheckbox = planDiv.querySelector(".terms-checkbox");
-            if (!termsCheckbox.checked) {
-                alert("Please accept the Terms & Conditions to proceed.");
-                return;
-            }
-            window.location.href = link;
-        }
-    </script>  
+            });			</script></div></header>
+            
+            
+            <div class="service-plans-container">
+                <h1>Service Plans</h1>
+                <p>CHOOSE YOUR PRICING PLAN</p>
+                <div class="plans" id="plans-container"></div>
+            </div>
+            <script>
+                const plans = [
+                    { 
+                        name: "Basic", 
+                        price: "£9 p/m", 
+                        description: "Every Month • Minimum commitment: 12 months", 
+                        features: [
+                            "Our engineers, No Sub-contracting",
+                            "Visual check of the boiler",
+                            "Check the combustion of the boiler",
+                            "Gas valve settings check",
+                            "Calculation of gas rate",
+                            "Check the gas appliances for gas tightness",
+                            "Expansion vessel pressure check",
+                            "Clean the condense trap",
+                            "Inhibitors level check",
+                            "Magnetic filter clean",
+                            "MBS Service member exclusive access",
+                            "Inflated referral scheme for MBS Service member",
+                            "Issue a detailed boiler service certificate",
+                            "Annual boiler service reminder"
+                        ],
+                        link: "https://pay.gocardless.com/BRT0003QEPP8N7F"
+                    },
+                    { 
+                        name: "Advanced", 
+                        price: "£12 p/m", 
+                        description: "Every Month • Minimum commitment: 12 months", 
+                        features: [
+                            "Our engineers, No Sub-contracting",
+                            "Visual check of the boiler",
+                            "Check the combustion of the boiler",
+                            "Gas valve settings check",
+                            "Calculation of gas rate",
+                            "Check the gas appliances for gas tightness",
+                            "Expansion vessel pressure check",
+                            "Clean the condense trap",
+                            "Inhibitors level check",
+                            "Magnetic filter clean",
+                            "Replace batteries in wireless room thermostats",
+                            "Full central heating water analysis",
+                            "Strip down service of heat exchanger",
+                            "Burner seals included if required",
+                            "10% discount on future work",
+                            "MBS Service member exclusive access",
+                            "Issue a detailed boiler service certificate",
+                            "Annual boiler service reminder"
+                        ],
+                        link: "https://pay.gocardless.com/BRT0003QEPRC11C"
+                    },
+                    { 
+                        name: "Boiler Ultimate", 
+                        price: "£14 p/m", 
+                        description: "Every Month • Minimum commitment: 24 months", 
+                        features: [
+                            "Our engineers, No Sub-contracting",
+                            "Visual check of the boiler",
+                            "Check the combustion of the boiler",
+                            "Gas valve settings check",
+                            "Calculation of gas rate",
+                            "Check the gas appliances for gas tightness",
+                            "Expansion vessel pressure check",
+                            "Clean the condense trap",
+                            "Inhibitors level check",
+                            "Magnetic filter clean",
+                            "Replace batteries in wireless room thermostats",
+                            "Full central heating water analysis",
+                            "Strip down service of heat exchanger",
+                            "Burner seals included if required",
+                            "10% discount on future work",
+                            "Electrodes included if required",
+                            "Visual health check of any hot water cylinders and valves",
+                            "Ensure radiators are bled and check for heat",
+                            "MBS Service member exclusive access",
+                            "Issue a detailed boiler service certificate",
+                            "Annual boiler service reminder"
+                        ],
+                        link: "https://pay.gocardless.com/BRT0003QEPYAPD4"
+                    }
+                ];
+        
+                const plansContainer = document.getElementById("plans-container");
+        
+                plans.forEach((plan) => {
+                    const planDiv = document.createElement("div");
+                    planDiv.classList.add("plan");
+                    planDiv.innerHTML = `
+                        <h2>${plan.name}</h2>
+                        <p>${plan.price}</p>
+                        <p>${plan.description}</p>
+                        <ul class="features">
+                            ${plan.features.map(feature => `<li>✅ ${feature}</li>`).join('')}
+                        </ul>
+                        <div class="terms">
+                            <label>
+                                <input type="checkbox" class="terms-checkbox"> I agree to the <a href="#">Terms & Conditions</a>
+                            </label>
+                        </div>
+                        <button class="btn" onclick="selectPlan(event, '${plan.link}')">Select Plan</button>
+                    `;
+                    plansContainer.appendChild(planDiv);
+                });
+            </script>
+            
+            <div id='inner_content-7-8' class='ct-inner-content'>
+        
+        
+        
 <div id="div_block-290-163" class="ct-div-block" >
     <!--<div id="text_block-594-163" class="ct-text-block" >All prices include VAT </div>--></div></div></section><div id="div_block-367-163" class="ct-div-block leadm-section" ><img  id="image-368-163" alt="boiler service plans" src="../wp-content/uploads/2022/09/boiler-image.png" class="ct-image leadm-img" data-lazy-srcset="../wp-content/uploads/2022/09/boiler-image.png 992w, ../wp-content/uploads/2022/09/boiler-image.png 480w" data-lazy-sizes="(max-width: 992px) 100vw, 992px" data-lazy-src="../wp-content/uploads/2022/09/boiler-image.png" /><noscript><img  id="image-368-163" alt="boiler service plans" src="../wp-content/uploads/2022/09/boiler-service-plans.png" class="ct-image leadm-img" srcset="../wp-content/uploads/2022/09/boiler-image.png 992w, ../wp-content/uploads/2022/09/boiler-image.png 480w" sizes="(max-width: 992px) 100vw, 992px" /></noscript>
     <div id="div_block-369-163" class="ct-div-block leadm-body" ><div id="text_block-370-163" class="ct-text-block h2-style margin-bottom-xs h2-mobile" >Contact Us</div><!--<div id="text_block-371-163" class="ct-text-block margin-bottom-xs" >A service plan is an affordable pay-monthly plan which covers your boiler for an annual service and repairs avoiding the larger one-off annual payment.<br></div>--><div id="text_block-372-163" class="ct-text-block margin-bottom-m" >Enter your details below.<br></div><div id="shortcode-373-163" class="ct-shortcode leadm-form" ><script type="text/javascript"></script>
