@@ -189,6 +189,7 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
             color: green;
             font-weight: bold;
             margin-right: 10px;
+            margin-left: 0;
         }
     .terms {
         margin-top: 25px;
@@ -304,6 +305,70 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
     }
     </style>
 
+
+<style>
+    /* Footer Styling */
+    .footer {
+        background: #1A2B48; /* Dark Blue */
+        color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: auto;
+        gap: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+    }
+    .footer-section h4 {
+        color: #F7931E; /* Orange */
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-section ul li {
+        margin: 8px 0;
+    }
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .footer-section ul li a:hover {
+        color: #F7931E; /* Orange */
+    }
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+<style>
+    ul{
+        list-style-type: none;
+    }
+    li{
+        margin: auto;
+    }
+</style>
+
 </head>
 <body class="page-template-default page page-id-163 wp-embed-responsive  oxygen-body" style="background-color: #3C3C3C;">
 <div id="div_block-21-8" class="ct-div-block" ><a id="link-22-8" class="ct-link top-bar-col" href="tel:01206912068"  style="background-color: #3C3C3C;" ><!--<div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div>
@@ -397,7 +462,7 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
                         </ul>
                         <div class="terms">✅
                             <label>
-                                <input type="checkbox" class="terms-checkbox"> I agree to the <a href="../areas-we-cover/index.html">Terms & Conditions</a>
+                                <input type="checkbox" class="terms-checkbox"> I agree to the <a href="../areas-we-cover/index.html" target="_blank">Terms & Conditions</a>
                             </label>
                         </div>
                         <a href="https://pay.gocardless.com/BRT0003QEQ0Y71B" class="btn" target="_blank">Select Plan</a>
@@ -500,7 +565,7 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
                         </ul>
                         <div class="terms">✅
                             <label>
-                                <input type="checkbox" class="terms-checkbox"> I agree to the <a href="../areas-we-cover/index.html">Terms & Conditions</a>
+                                <input type="checkbox" class="terms-checkbox"> I agree to the <a href="../areas-we-cover/index.html" target="_blank">Terms & Conditions</a>
                             </label>
                         </div>
                         <a href="${plan.link}" target="_blank">
@@ -571,7 +636,40 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
                         </div><script>
 gform.initializeOnLoaded( function() {gformInitSpinner( 3, '../wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_3').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_3');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_3').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_3').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_3').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_3').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_3').val();gformInitSpinner( 3, '../wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [3, current_page]);window['gf_submitting_3'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_3').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [3]);window['gf_submitting_3'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_3').text());}else{jQuery('#gform_3').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "3", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);                if (event && event.defaultPrevented) {                return;         }        const gformWrapperDiv = document.getElementById( "gform_wrapper_3" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_3";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_3" );        let postRenderFired = false;                function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            jQuery( document ).trigger( 'gform_post_render', [3, current_page] );            gform.utils.trigger( { event: 'gform/postRender', native: false, data: { formId: 3, currentPage: current_page } } );            gform.utils.trigger( { event: 'gform/post_render', native: false, data: { formId: 3, currentPage: current_page } } );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
 </script>
-</div></div></div></div><footer id="section-28-8" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="_social_icons-35-8" class="oxy-social-icons" ><a href='https://www.facebook.com/' target='_blank' class='oxy-social-icons-facebook'><svg><title>Visit our Facebook</title><use xlink:href='#oxy-social-icons-icon-facebook'></use></svg></a><a href='https://www.instagram.com/' target='_blank' class='oxy-social-icons-instagram'><svg><title>Visit our Instagram</title><use xlink:href='#oxy-social-icons-icon-instagram'></use></svg></a><a href='https://twitter.com/' target='_blank' class='oxy-social-icons-twitter'><svg><title>Visit our Twitter</title><use xlink:href='#oxy-social-icons-icon-twitter'></use></svg></a><a href='https://www.youtube.com/channel/' target='_blank' class='oxy-social-icons-youtube'><svg><title>Visit our YouTube channel</title><use xlink:href='#oxy-social-icons-icon-youtube'></use></svg></a></div><p id="text_block-29-8" class="ct-text-block footer-text" >©&nbsp;Mr Boiler Services</p><a id="text_block-30-8" class="ct-link-text footer-text footer-link" href="https://goo.gl/maps/6MQMfhE3EnD4PtC2A" target="_blank" rel="noopener" >10 London road, Stanway, Colchester, Essex. Co30ha</a><div id="div_block-99-8" class="ct-div-block" ><!--<p id="text_block-88-8" class="ct-text-block footer-text" >VAT No. 373674761</p>--><a id="link_text-74-8" class="ct-link-text footer-text footer-link" href="#" target="_blank" rel="noopener" >Company Number&nbsp;12496015</a></div><div id="div_block-31-8" class="ct-div-block" ><!--<a id="link_text-32-8" class="ct-link-text footer-text footer-link" href="../legal-pages/index.html" target="_self"  >Legal Pages</a><a id="link_text-33-8" class="ct-link-text footer-text footer-link" href="../sitemap/index.html" target="_self"  >Sitemap</a><a id="link_text-34-8" class="ct-link-text footer-text footer-link" href="http://" target="_self" rel="nofollow noopener" >Website by Trades Freedom Club</a></div>--><div id="text_block-101-8" class="ct-text-block footer-text" >MR Boiler Services Call the office now on 01206978443. If you would prefer to send an email you can do this buy clicking  here  and we contact you back as soon as we can. <br> &copy; 2025 ALL RIGHTS RESERVED BY MR. BOILER SERVICES.<br></div><div id="shortcode-75-8" class="ct-shortcode" ></div></div></footer>	<!-- WP_FOOTER -->
+</div></div></div></div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p><strong>Phone:</strong> 01206 978443 / 07791209303</p>
+            <p><strong>Email:</strong> <a href="mailto:mrboilerservices@gmail.com">mrboilerservices@gmail.com</a></p>
+            <p><strong>Address:</strong> 10 London Road, Stanway, Colchester, CO3 0HA</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <ul class="social-links">
+                <li><a href="https://facebook.com/mrboilerservices" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/mrboilerservices" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/mrboilerservices" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 Mr Boiler Services. All rights reserved.</p>
+    </div>
+</footer>	<!-- WP_FOOTER -->
 <style>.ct-FontAwesomeicon-close{width:0.78571428571429em}</style>
 <style>.ct-FontAwesomeicon-pencil{width:0.85714285714286em}</style>
 <style>.ct-FontAwesomeicon-phone{width:0.78571428571429em}</style>

@@ -176,63 +176,56 @@ p {
 
 
 <style>
+    /* Footer Styling */
+    .footer {
+        background: #1A2B48; /* Dark Blue */
+        color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+    }
     .footer-container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #1a1a2e;
-        color: white;
-        padding: 20px;
         flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: auto;
+        gap: 20px;
     }
-    .footer-services {
-        text-align: left;
-        margin-right: auto;
-        max-width: 200px;
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
     }
-    .footer-services h4 {
+    .footer-section h4 {
+        color: #F7931E; /* Orange */
+        font-size: 18px;
         margin-bottom: 10px;
     }
-    .footer-services ul {
+    .footer-section ul {
         list-style: none;
         padding: 0;
     }
-    .footer-services li {
-        margin-bottom: 5px;
+    .footer-section ul li {
+        margin: 8px 0;
     }
-    .footer-social {
-        display: flex;
-        align-items: center;
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
     }
-    .footer-social a {
-        margin-right: 10px;
-        color: white;
-        transition: transform 0.3s ease;
-        display: inline-flex;
-        align-items: center;
+    .footer-section ul li a:hover {
+        color: #F7931E; /* Orange */
     }
-    .footer-social a svg {
-        width: 24px;
-        height: 24px;
-    }
-    .footer-social a:hover {
-        transform: scale(1.2);
-    }
-    .footer-copyright {
-        text-align: center;
-        flex-grow: 1;
+    .footer-bottom {
+        margin-top: 20px;
         font-size: 14px;
     }
-    .footer-contact {
-        text-align: right;
-        margin-left: auto;
-    }
-    .footer-link {
-        color: #007bff;
-        text-decoration: none;
-    }
-    .footer-link:hover {
-        text-decoration: underline;
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 </style>
 
@@ -242,7 +235,7 @@ p {
 
 
 
-<div id="div_block-21-8" class="ct-div-block" ><a id="link-22-8" class="ct-link top-bar-col" href="tel:#"  style="background-color: #3C3C3C;" ><!--<div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div><div id="text_block-24-8" class="ct-text-block" >01206 912068</div></a><a id="link-25-8" class="ct-link top-bar-col" href="../contact-us/index.html"   ><div id="fancy_icon-26-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-26-8"><use xlink:href="#FontAwesomeicon-pencil"></use></svg></div><div id="text_block-27-8" class="ct-text-block" >Online Quote</div></a>--></div><header id="div_block-64-8" class="ct-div-block" ><div id="div_block-60-8" class="ct-div-block inner-content" ><a id="logo-link" class="ct-link" href="../index.html" target="_self"  ><img  id="logo" alt="mr boiler services logo " src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" style="height: 90px; width: 150px;" class="ct-image" data-lazy-src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico"/><noscript><!--<img  id="logo" alt="elementis boiler experts logo " src="../wp-content/uploads/2023/08/Elementis-Boiler-Experts-Logo-.svg" class="ct-image"/>--></noscript></a><a id="div_block-44-8" class="ct-link header-cta-wrap" href="#"   ><img  id="image-100-8" alt="Gas safe logo" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image" data-lazy-src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png"/><noscript><img  id="image-100-8" alt="Gas safe logo" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/></noscript></a><a id="div_block-53-8" class="ct-link header-cta-wrap" href="tel:01206912068"   ><img  id="image-55-8" alt="call" src="../wp-content/uploads/2022/08/call.svg" class="ct-image btn-call-img"/><div id="link_text-58-8" class="ct-text-block white-link text-top-margin" >01206 978443<br></div></a><a id="div_block-38-8" class="ct-link btn btn-green" href="../contact-us/index.html"   ><div id="text_block-39-8" class="ct-text-block" >Get A Plan</div></a></div><div id="div_block-72-8" class="ct-div-block" >
+<div id="div_block-21-8" class="ct-div-block" ><a id="link-22-8" class="ct-link top-bar-col" href="tel:#"  style="background-color: #3C3C3C;" ><!--<div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div><div id="text_block-24-8" class="ct-text-block" >01206 912068</div></a><a id="link-25-8" class="ct-link top-bar-col" href="../contact-us/index.html"   ><div id="fancy_icon-26-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-26-8"><use xlink:href="#FontAwesomeicon-pencil"></use></svg></div><div id="text_block-27-8" class="ct-text-block" >Online Quote</div></a>--></div><header id="div_block-64-8" class="ct-div-block" ><div id="div_block-60-8" class="ct-div-block inner-content" ><a id="logo-link" class="ct-link" href="../index.html" target="_self"  ><img  id="logo" alt="mr boiler services logo " src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" style="height: 90px; width: 150px;" class="ct-image" data-lazy-src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico"/><noscript><!--<img  id="logo" alt="elementis boiler experts logo " src="../wp-content/uploads/2023/08/Elementis-Boiler-Experts-Logo-.svg" class="ct-image"/>--></noscript></a><a id="div_block-44-8" class="ct-link header-cta-wrap" href="#"   ><img  id="image-100-8" alt="Gas safe logo" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image" data-lazy-src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png"/><noscript><img  id="image-100-8" alt="Gas safe logo" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/></noscript></a><a id="div_block-53-8" class="ct-link header-cta-wrap" href="tel:01206912068"   ><img  id="image-55-8" alt="call" src="../wp-content/uploads/2022/08/call.svg" class="ct-image btn-call-img"/><div id="link_text-58-8" class="ct-text-block white-link text-top-margin" >01206 978443<br></div></a><a id="div_block-38-8" class="ct-link btn btn-green" href="../boiler-servicing-plans/index.html"   ><div id="text_block-39-8" class="ct-text-block" >Service Plans</div></a></div><div id="div_block-72-8" class="ct-div-block" >
 		<div id="-pro-menu-73-8" class="oxy-pro-menu " ><div class="oxy-pro-menu-mobile-open-icon " data-off-canvas-alignment=""><svg id="-pro-menu-73-8-open-icon"><use xlink:href="#FontAwesomeicon-bars"></use></svg></div>
 
                 
@@ -257,8 +250,8 @@ p {
              
                           data-oxy-pro-menu-dropdown-links-on-mobile="toggle">
              
-            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="oxy-pro-menu-list"><li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-169"><a title="Elementis Boiler Experts" href="../index.html">Home</a></li>
-<li id="menu-item-180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180"><a>Our Services</a>
+            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="oxy-pro-menu-list"><li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-169"><a title="Elementis Boiler Experts" href="../../index.html">Home</a></li>
+<li id="menu-item-180" class="menu-item menu-item-type-custom menu-item-object-custom "><a>Our Services</a>
 <!--<ul class="sub-menu">
 	<li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a title="New Boiler Colchester" href="../new-boiler-colchester/index.html">New Boiler</a></li>
 	<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a title="Boiler Installation Colchester" href="../boiler-installation-colchester/index.html">Boiler Installation</a></li>
@@ -268,8 +261,8 @@ p {
 	<li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a title="Power flushing Colchester" href="../power-flushing-colchester/index.html">Power Flushing</a></li>
 </ul>-->
 </li>
-<li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a title="Boiler Servicing Plans Colchester" href="../boiler-servicing-plans/index.html">Boiler Service Plans</a></li>
-<li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-184"><a href="../about-us/index.html">About Us</a>
+<li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a title="Boiler Servicing Plans Colchester" href="../boiler-servicing-plans/index.html">Service Plans</a></li>
+<li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor "><a href="../about-us/index.html">About Us</a>
 <!--<ul class="sub-menu">
 	<li id="menu-item-726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a href="../about-us/index.html">Company Profile</a></li>
 	<li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-723 current_page_item menu-item-725"><a href="index.html" aria-current="page">Areas We Cover</a></li>
@@ -292,47 +285,145 @@ p {
             });
             jQuery('#-pro-menu-73-8 .oxy-pro-menu-show-dropdown .menu-item:not(.menu-item-has-children) > a', 'body').each(function(){
                 jQuery(this).append('<div class="oxy-pro-menu-dropdown-icon-click-area"></div>');
-            });			</script></div></header><div id='inner_content-7-8' class='ct-inner-content'><div id="" class="ct-div-block" ><section id="section-8-11" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="div_block-49-11" class="ct-div-block margin-bottom-s page-title-h1-bg-no-hover" ><h1 id="headline-9-11" class="ct-headline page-title-h1">Terms & Conditions</h1></div>
+            });			</script></div></header><div id='inner_content-7-8' class='ct-inner-content'><div id="" class="ct-div-block" ><section id="section-8-11" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="div_block-49-11" class="ct-div-block margin-bottom-s page-title-h1-bg-no-hover" ><h1 id="headline-9-11" class="ct-headline page-title-h1">M.B.S Service plans TGC’s</h1>
+            </div>
                  <div class="container">
-                    <h1>M.B.S Service Plans - Terms & Conditions</h1>
+                    <h1>M.B.S =Mr Boiler Services</h1>
+                    <h2>About Mr Boiler Services</h2>
+                    <p>Mr Boiler Services: Mr Boiler Services is a trading name of Scopia Ltd, 10 London Road, Stanway. CO3 0HA and is registered in England and Wales under Company Number 04853805.
+
+                        All plans are not an insurance policy and does not cover fault finding, replacement of parts, or repairs outside of the specified components in the service plan you have purchased.
+                        </p>
                     
-                    <h2>1. About Mr Boiler Services</h2>
-                    <p>Mr Boiler Services is a trading name of Scopia Ltd, 10 London Road, Stanway, CO3 0HA, registered in England and Wales under Company Number 04853805.</p>
+                    <h2>Boiler Service <br> What is included</h2>
+                    <p>A service of your Boiler completed by a Gas Safe registered engineer, including:
+
+                        An inspection of the Boiler and its installation completed in accordance with the current Gas Safety (Installation C Use) Regulations and the manufacturer’s instructions. This includes, where required; <br>
+                        
+                        •	Testing, checking and cleaning of the Boiler and its system filter. <br>
+                        •	Maintenance parts fitted at either no additional cost or additional cost depending on the plan purchased. <br>
+                        •	Testing the gases produced by the Boiler, its ventilation and the effectiveness of the flue <br>
+                        •	Determining whether the Boiler is safe to use <br> <br>
+                        
+                        Some system filters are superior in their quality to others. We will advise on an individual basis if the system filter has an increased risk of component failure. Should we identify a lower quality filter on your system, we will ask if you would like us to clean the filter after explaining the risks. <br>
+                        Should the filter or filter seals fail, repair/replacement would be an additional cost and outside of this agreement. <br>
+                        In this event, we would supply you with a quote for the repair/replacement, should you wish to proceed, your authorisation before undertaking any further works will be required. <br>
+                        If the filter isolation valves fail to isolate, we will be unable to clean the filter and a repair to the isolation valves will be required. This would be outside of this agreement and the same process for quotations as above would apply. <br>
+                        We will replace the large main seal, should they fail on the following filters: <br> <br>
+                        
+                        •	Adey Magnaclean mk1 <br>
+                        •	Adey Magnaclean mk2
+                        </p>
                     
-                    <h2>2. Service Plans Overview</h2>
-                    <p>All plans are not insurance policies and do not cover fault finding, replacement of parts, or repairs outside of the specified components in the service plan you have purchased.</p>
-                    
-                    <h2>3. Boiler Service Inclusions</h2>
+                    <h2>Exclusions</h2>
+                    <p>Any Breakdown or Repair needed to the Boiler or your Heating System (found during a service) <br>
+
+                        All further works required to undertake planned maintenance are subject to additional cost E.G. faulty filter isolation valves or faulty pumps etc. <br>
+                        
+                        Maintenance that is not part of the standard manufacturer’s service unless specified in your plan (plan details can be found in the service plans document provided in the M.B.S Members pack or on our website www.mrboilerservices.co.uk) <br>
+                        
+                        A test of the Gas Supply Pipe to the Boiler, unless there is a known or suspected escape of gas or the boiler service disturbs certain joints in which a test of the supply pipe is required under the gas regulations. <br>
+                        
+                        The following are also excluded from the plans and therefore Mr Boiler Services will not be liable for any of the following:
+                        </p>
                     <ul>
-                        <li>Inspection of the Boiler and its installation per Gas Safety Regulations.</li>
-                        <li>Testing, checking, and cleaning of the Boiler and system filter.</li>
-                        <li>Testing gases, ventilation, and flue effectiveness.</li>
-                        <li>Assessing boiler safety.</li>
+                        <li>systems/equipment/appliances that have not been installed, serviced or maintained regularly according to British Standards and/or manufacturer’s instructions; or that are subject to a manufacturer’s recall</li>
+                        <li>Any defect, damage or breakdown caused by malicious or deliberate action, negligence, misuse or third party interference, including any attempted repair or modification to the elements covered by this plan, which does not comply with British Standards</li>
+                        <li>3.	Any situation where due to health and safety, a specialist person is required, e.g. where asbestos is present.</li>
                     </ul>
                     
-                    <h2>4. Exclusions</h2>
+                    <h2>Service Charge</h2>
+                    <p>12 payments are required before the service(s) is carried out. Should you require a boiler service to ensure 12 months are paid before the following service, we offer discounted rates for a one off boiler service, if purchased with a service plan.</p>
                     <ul>
-                        <li>Any breakdown or repair needed to the Boiler or Heating System found during a service.</li>
-                        <li>Additional maintenance beyond manufacturer’s service unless specified in your plan.</li>
-                        <li>Any situation requiring a specialist, e.g., asbestos presence.</li>
+                        <li>Basic Service- £75.00. <br>
+                            Normal cost £85.00
+                            </li>
+                        <li>Full strip down service, if required-excluding costs for any parts E.G burner seal or electrodes- £G5.00. <br>
+                            Normal cost-£110.00
+                            </li>
                     </ul>
                     
-                    <h2>5. Service Charge</h2>
-                    <p>12 payments are required before a service is carried out. Discounted rates apply for one-off services when purchased with a service plan.</p>
+                    <h2>Coverage Area</h2>
+                    <p>Service coverage for all Plans is available exclusively to residents within North Essex and South Suffolk.</p>
                     
-                    <h2>6. Coverage Area</h2>
-                    <p>Service plans are available exclusively to residents within North Essex and South Suffolk.</p>
+                    <h2>Cancelling a booked boiler service</h2>
+                    <p>If you choose to cancel your boiler service booking (at any time), please be aware the later you look to reschedule the booking, the less likely you are to obtain your preferred <br>
+ 
+                        alternative date as the diary is live and everchanging. Bookings need to be cancelled no less than 2 hours before the appointment. Our 3-strike policy is applied here. <br>
+                        
+                        On rare occasions we may need to reschedule your booking. We will always contact via phone before following up with a confirmation email of the cancellation. This contact could be before the appointment time or on the time of appointment. We will then make an alternative booking with you over the phone. In this instance, we will strive to make the rescheduled appointment as soon as possible, either on another service day (Monday’s or Tuesday’s) or an alternative day.
+                        </p>
                     
-                    <h2>7. Cancellations & Rescheduling</h2>
-                    <p>Bookings must be canceled at least 2 hours before the appointment. We may reschedule in rare cases and will notify you accordingly.</p>
+                    <h2>Referral bonus Scheme</h2>
+                    <p>The referral bonus scheme is only available for customers who are currently an M.B.S. service member. The referral bonus scheme is for anyone who refers us to another customer who goes on to purchase a plan. The customer who has referred us will receive a one off £30.00 payment in one of the following forms of their choice:</p>
+                    <ul>
+                        <li>Amazon voucher</li>
+                        <li>Sainsburys one card bags of choice voucher</li>
+                        <li>One4all Voucher</li>
+                    </ul>
+                    <p>All vouchers will be digital. <br> The referral bonus will only be paid once the 4th payment has been made by the referred customer. <br>
+                        An email will be sent once the 4th payment has been made which will confirm the referral bonus and in what form you would like your bonus.
+                        There is no limit for the amount of referrals that can be made but each referral will be subject to the above terms.
+                        </p>
+
+                    <h2>About your Boiler Service</h2>
+                    <p>All services will take place after 12 months of paid cover. Boiler Services can be completed any time throughout the year, excluding during our booked annual leave which will be shown in the diary when booking, but we only allow boiler service bookings on Monday’s and Tuesday’s unless, an agreed date with us has been arranged in which we can book on an alternative day. The best way to organise an alternative day booking would be for you to call us. <br>
+
+                        We will send service reminders for the boiler service via an email in the 4 weeks prior to the due date. If you do not book in, either before or after the reminders are sent to you, and your Boiler service isn’t completed during the 12-month period, you won’t be eligible for a refund. We can carry out the service at any point after the due date but refunds are not given. If this rolls into the next 12 month period, the service can be booked and completed but a refund for the year in which the service was missed will not be refundable. Normal payments can continue and the original service date when the plan was purchased will be adhered to meaning the interval between the 1st and 2nd service could be less than 12 months in this instance. <br>
+                        
+                        Services are required every 12 months, however during periods of high demand you may find the dates and times in which you are available have already been booked. If this occurs, please contact us as we will assist in arranging a booking as close as possible, which could be on days which are not set out in our diary for servicing. There is no guarantee we will be able to accommodate your service within the timeframes required as our diary is a live and everchanging. <br>
+                        
+                        Where safety defects are identified, the current Gas Industry Unsafe Situation Procedure will be followed. This may mean that the Boiler cannot be used until the problem we find is resolved. The cost of repair including parts and labour is not covered in this plan, Unless this faulty part is a service part and is covered under your service plan. Details of whats covered is outlined in the “included” listings within the plans. <br>
+
+                        We can if requested, supply a quotation for any repair.
+                        You are under no obligation to utilise our services to carry out the repair although, if required by regulations, a suitable gas safe registered engineer will be needed to carry out the repair. <br>
+                        
+                        Please make sure that you have the manufacturer’s instructions available for the engineer when they attend. We will supply you with an A4 document folder labelled M.B.S. Service Plans Members Pack. We have supplied these folders as a good place in which all documents pertaining to the boiler could be kept.
+                        </p>
                     
-                    <h2>8. Referral Bonus Scheme</h2>
-                    <p>Customers who refer a new service plan buyer receive a £30.00 voucher, issued digitally after the referred customer’s 4th payment.</p>
-                    
-                    <h2>9. Service & Safety Compliance</h2>
-                    <p>All services follow Gas Safe regulations. Safety defects will be handled per Gas Industry Unsafe Situation Procedures.</p>
-                    
-                    <h2>10. Contact Information</h2>
+                    <h2>Terms of Service</h2>
+                    <p>Duration: The basic Plan requires a minimum commitment of 12 months, continuing a rolling monthly basis thereafter. The Advanced, Boiler Ultimate and Unvented Ultimate plans require a minimum commitment of 24 months continuing a monthly rolling basis thereafter. <br>
+
+                    We reserve the right to adjust the monthly cost of the plans at our discretion. We will write to you 30 days ahead of the increase. We will not retrospectively charge if you are half way through the year between services. The updated charges will be valid 30 days after notifying you. Our goal is to ensure we keep our customers happy and so rest assured, these adjustments of the monthly price will not be made lightly or regularly.
+                        </p>
+
+                    <h2>Changing your address</h2>
+                    <p>If you move home and need to update your correspondence address, call us or write to us . You are responsible for informing Mr Boiler Services of a change of address. <br>
+
+                    A new service plan agreement will need to be made for the boiler at the new address with a service date to be determined. Once determined, payments made under the service plan for the boiler at the previous address will be allocated to the boiler service plan for the boiler at the new address. If there is not 12 months of payments made before the service of the boiler at the new address, then a top up payment equivalent to the bring the balance up to that of 12 monthly payments will be required. Once the service has been carried out on the boiler at the new address, regular monthly payments can then continue as normal with no top up payments required. <br>
+                        
+                    If we deem the new property’s boiler not eligible, a refund will be given for the payments made within the 12 month period since the last service, or initial sign on.
+                    </p>
+
+                    <h2>Missing payment</h2>
+                    <p>If you fail to make a payment for your Plan on the due date, your Plan will be suspended and you will not be entitled to any service(s) under this Plan until payment is made. If you do not pay the requested amount within 30 days of the due date, your Plan will be cancelled. You will not be liable for the remaining cost of the 12 month period but refunds for any funds already paid will not be given.</p>
+
+                    <h2>Creating access</h2>
+                    <p>You will be required to make reasonable access to the boiler and all other points of interest whilst carrying out your service E.G radiators, cylinders and airing cupboard etc. Our engineers will be vigilant with health and safety matters, if they deem the area unsafe due to access or any other health and safety concern, the service will be cancelled and rescheduled. With all matters such as these we run a 3-strike policy. If we reschedule twice, and upon the third visit we are still unable to carry out the service, we will cancel the annual service, the service plan and no refunds will be given.</p>
+
+                    <h2>Cancellations</h2>
+                    <h3>How can you cancel</h3>
+                    <p>If you wish to cancel your Plan; you or an authorised representative, you must contact us in writing either by post or email. No refunds will be made so the best way to cancel the policy is to advise us that after the next service, you will be cancelling the service plan and future payments. This way you will have paid for the current boiler service and will not lose any further payments.</p>
+                    <h3>How can Mr Boiler Services cancel</h3>
+                    <p>Mr Boiler Services reserves the right to cancel your Boiler Service Plan prior to the service being carried out, by giving you at least 7 days' notice at your last known address. In these circumstances Mr Boiler Services will refund the amount paid since the last service or initial purchase.</p>
+
+                    <h2>General Provisions</h2>
+                    <p>The service plan is provided for you by Mr Boiler Services. If you need to contact Mr Boiler Services regarding your Plan, please call or write to us. <br>
+
+                        Mr Boiler Services will collect the payment in accordance with your instructions. <br>
+                        
+                        Mr Boiler Services will only amend these Terms and Conditions for legal, regulatory or update requirements. Where this change benefits you, we will make the change immediately and notify you within 28 days. In all other cases we will write to advise you of the change at least 28 days prior to any change taking effect. If the changes do not benefit you and you wish to cancel your Plan, you may do so, as outlined under the heading ‘How can you cancel’. <br>
+                        
+                        Compliance and Safety: All services performed under the service Plan’s adhere strictly to Gas Safe regulations and local building control authority standards. <br>
+                        
+                        Privacy Policy: We are dedicated to protecting your personal data in accordance with UK data protection laws. <br>
+                        
+                        Changes to Terms: We reserve the right to modify these terms, with adequate notice provided to customers. <br>
+                        
+                        The plans are provided under an agreement between you and Mr Boiler Services and are not regulated by the Financial Conduct Authority. Therefore, if you have any complaint, you will not have the right to refer it to the Financial Ombudsman Service.
+                        </p>
+                    <h2>Contact us and Communication</h2>
+                    <p>For service requests, questions, or to report issues, please contact Mr Boiler Services:</p>
                     <div class="contact-info">
                         <p><strong>Phone:</strong> 01206 978443 / 07791209303</p>
                         <p><strong>Website:</strong> <a href="https://www.mrboilerservices.co.uk">www.mrboilerservices.co.uk</a></p>
@@ -362,51 +453,38 @@ p {
 <li><h3>West Mersea</h3></li></ul></div>
 <div id="_rich_text-62-723" class="oxy-rich-text" >
 <ul class="custom-list"><li><h3>Hadleigh</h3></li></ul></div>
-<div id="_rich_text-63-723" class="oxy-rich-text" ><ul class="custom-list"><li><h3>Wivenhoe</h3></li></ul></div><div id="_rich_text-64-723" class="oxy-rich-text" ><ul class="custom-list"><li><h3>West Mersea</h3></li></ul></div><div id="_rich_text-65-723" class="oxy-rich-text" ><ul class="custom-list"><li><h3>Elmstead Market</h3></li></ul></div><div id="_rich_text-66-723" class="oxy-rich-text" ><ul class="custom-list"><li><h3>Fingringhoe</h3></li></ul></div></div></div></section></div></div>--><footer id="section-28-8" class="ct-section">
-            <div class="ct-section-inner-wrap footer-container">
-                
-               
-        
-                <!-- Social Media Icons -->
-                <div class="footer-social">
-                    <a href='https://www.facebook.com/' target='_blank' class='oxy-social-icons-facebook'>
-                        <svg width="20" height="20"><title>Visit our Facebook</title><use xlink:href='#oxy-social-icons-icon-facebook'></use></svg>
-                    </a>
-                    <a href='https://www.instagram.com/' target='_blank' class='oxy-social-icons-instagram'>
-                        <svg width="20" height="20"><title>Visit our Instagram</title><use xlink:href='#oxy-social-icons-icon-instagram'></use></svg>
-                    </a>
-                    <a href='https://twitter.com/' target='_blank' class='oxy-social-icons-twitter'>
-                        <svg width="20" height="20"><title>Visit our Twitter</title><use xlink:href='#oxy-social-icons-icon-twitter'></use></svg>
-                    </a>
-                    <a href='https://www.youtube.com/channel/' target='_blank' class='oxy-social-icons-youtube'>
-                        <svg width="20" height="20"><title>Visit our YouTube channel</title><use xlink:href='#oxy-social-icons-icon-youtube'></use></svg>
-                    </a>
-                </div>
-                
-                 <!-- Services - Left -->
-                 <div class="footer-services">
-                    <h4>SERVICES</h4>
-                    <ul>
-                        <li>Boiler Servicing and Repairs</li>
-                        <li>Central Heating Installations</li>
-                        <li>Plumbing Services</li>
-                        <li>Gas Safety Checks</li>
-                    </ul>
-                </div>
-                
-                <!-- Contact Details - Right -->
-                <div class="footer-contact">
-                    <a href="https://www.google.com/maps/place/Mr+Boiler+Services/@51.8894133,0.8438406,17z/data=!3m1!4b1!4m6!3m5!1s0x2c891b05106951dd:0x642b6f806c0ae64!8m2!3d51.88941!4d0.8464155!16s%2Fg%2F11w25x60kn?entry=ttu&g_ep=EgoyMDI1MDMwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="footer-link">
-                        10 London Road, Stanway, Colchester, Essex. Co30ha
-                    </a>
-                    <p>Company Number: 01206978443</p>
-                    <p>Call us now: 01206978443</p>
-                </div>
-                <p>If you prefer email, click <a href="#" class="footer-link">here</a> and we'll contact you back as soon as possible.</p>
-                <!-- Copyright - Center -->
-                <div class="footer-copyright">
-                    <p>&copy; 2025 MR Boiler Services. All Rights Reserved.</p>
-                </div>
+<div id="_rich_text-63-723" class="oxy-rich-text" ><ul class="custom-list"><li><h3>Wivenhoe</h3></li></ul></div><div id="_rich_text-64-723" class="oxy-rich-text" ><ul class="custom-list"><li><h3>West Mersea</h3></li></ul></div><div id="_rich_text-65-723" class="oxy-rich-text" ><ul class="custom-list"><li><h3>Elmstead Market</h3></li></ul></div><div id="_rich_text-66-723" class="oxy-rich-text" ><ul class="custom-list"><li><h3>Fingringhoe</h3></li></ul></div></div></div></section></div></div>--><footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p><strong>Phone:</strong> 01206 978443 / 07791209303</p>
+            <p><strong>Email:</strong> <a href="mailto:mrboilerservices@gmail.com">mrboilerservices@gmail.com</a></p>
+            <p><strong>Address:</strong> 10 London Road, Stanway, Colchester, CO3 0HA</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <ul class="social-links">
+                <li><a href="https://facebook.com/mrboilerservices" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/mrboilerservices" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/mrboilerservices" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 Mr Boiler Services. All rights reserved.</p>
+    </div>
                 <div data-rocket-location-hash="68d6453504da2ca9c2420f5cce8314f1" class="rplg" style="" data-id="1199"><div data-rocket-location-hash="42d029549ea1765c5742767495c890c6" class="rplg-badge-cnt                     rplg-badge_left-fixed                                         rplg-badge-hide        "><div class="rplg-badge2"                                data-provider="google"            ><div class="rplg-badge2-border"></div><div class="rplg-badge2-btn rplg-badge2-clickable"                                    ><span class="rplg-badge-logo"></span><div class="rplg-badge2-score"><div>                        Google Rating                        </div><div ><div class="rplg-biz-rating rplg-trim rplg-biz-google">
 <div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div><div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 254 reviews</span></div></div></div></div><div class="rplg-form rplg-form-left" style="display:none"><div class="rplg-form-head"><div class="rplg-form-head-inner"><div class="rplg-row"><div class="rplg-row-left"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" data-lazy-src="../wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" >
 <noscript><img src="../wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" loading="lazy" class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" ></noscript></div><div class="rplg-row-right rplg-trim">                                    Elementis Boiler Experts        <div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div></div><div class="wp-google-wr"><a href="https://search.google.com/local/writereview?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" rel="noopener nofollow" onclick="_rplg_popup(this.href, 800, 600);return !1">review us on<span data-logo="google"></span></a><a href="https://search.google.com/local/reviews?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" target="_blank" rel="noopener" onclick="return true;">See all reviews</a></div></div></div></div><button class="rplg-form-close" type="button" onclick="_rplg_get_parent(this, 'rplg-form').style.display='none'">×</button></div><div class="rplg-form-body"></div><div class="rplg-form-content"><div class="rplg-form-content-inner"><div class="rplg-form-review ">
