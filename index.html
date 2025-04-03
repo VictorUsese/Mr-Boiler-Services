@@ -16,11 +16,11 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 <link rel="preload" as="font" href="./mrboilerservices.co.uk/wp-content/uploads/fonts/D-Medium.woff2" crossorigin>
 <link rel="preload" as="font" href="./mrboilerservices.co.uk/wp-content/uploads/fonts/D-Regular.woff2" crossorigin>
 <meta name="dc.title" content="MR. Boiler Services | Boiler Experts in Colchester">
-<meta name="dc.description" content="Mr. Boiler Services are a family-run plumbing, heating and Gas Safe registered company working throughout Colchester &amp; Essex.">
+<meta name="dc.description" content="Mr. Boiler Services – Trusted Gas Safe Plumbers & Heating Experts in Colchester. Reliable boiler repair, installation & maintenance. Registered company working throughout Colchester. Call today for expert service! &amp; Essex.">
 <meta name="dc.relation" content="https://mrboilerservices.co.uk/">
 <meta name="dc.source" content="https://mrboilerservices.co.uk/">
 <meta name="dc.language" content="en_GB">   
-<meta name="description" content="Mr. Boiler Services are a family-run plumbing, heating and Gas Safe registered company working throughout Colchester &amp; Essex.">
+<meta name="description" content="Mr. Boiler Services – Trusted Gas Safe Plumbers & Heating Experts in Colchester. Reliable boiler repair, installation & maintenance. Registered company working throughout Colchester. Call today for expert service! &amp; Essex.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="index.html">
 <script id="website-schema" type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","name":"Mr. Boiler ervices | Boiler Experts in Colchester","alternateName":"Mr. Boiler Experts","description":"","url":"https:\/\/mrboilerservices.co.uk/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/mrboilerservices.co.uk\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
@@ -29,9 +29,9 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 <meta property="og:locale" content="en_GB">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mr. Boiler Services | Heating Specialists in Colchester">
-<meta property="og:description" content="Mr. Boiler Services are a family-run plumbing, heating and Gas Safe registered company working throughout Colchester &amp; Essex.">
-<meta property="og:image" content="https://mrboilerservices.co.uk/wp-content/uploads/2022/09/Elementis-Boiler-Experts.jpg">
-<meta property="og:image:secure_url" content="https://mrboilerservices.co.uk/wp-content/uploads/2022/09/Elementis-Boiler-Experts.jpg">
+<meta property="og:description" content="Mr. Boiler Services – Trusted Gas Safe Plumbers & Heating Experts in Colchester. Reliable boiler repair, installation & maintenance. Registered company working throughout Colchester. Call today for expert service! &amp; Essex.">
+<meta property="og:image" content="https://mrboilerservices.co.uk/wp-content/uploads/2023/08/mr-boiler.png">
+<meta property="og:image:secure_url" content="https://mrboilerservices.co.uk/wp-content/uploads/2023/08/mr-boiler.png">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="900">
 <meta property="og:image:alt" content="mr boiler services">
@@ -42,8 +42,8 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 <meta name="twitter:site" content="https://twitter.com/mrboilerservices">
 <meta name="twitter:creator" content="https://twitter.com/mrboilerservices">
 <meta name="twitter:title" content="Mr Boiler Services | Boiler Experts in Colchester">
-<meta name="twitter:description" content="Mr Boiler Services are a family-run plumbing, heating and Gas Safe registered company working throughout Colchester &amp; Essex.">
-<meta name="twitter:image" content="https://mrboilerservices.co.uk/wp-content/uploads/2022/09/Mrs-Boiler-Experts.jpg">
+<meta name="twitter:description" content="Mr. Boiler Services – Trusted Gas Safe Plumbers & Heating Experts in Colchester. Reliable boiler repair, installation & maintenance. Registered company working throughout Colchester. Call today for expert service! &amp; Essex.">
+<meta name="twitter:image" content="https://mrboilerservices.co.uk/wp-content/uploads/2022/09/Mr-Boiler-Experts.jpg">
 <link rel='dns-prefetch' href='http://widgets.leadconnectorhq.com/' />
 
 <link rel="alternate" type="application/rss+xml" title="Mr Boiler Services &raquo; Feed" href="#" />
@@ -309,6 +309,125 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
         opacity: 1;
         transform: translateX(0);
     }
+
+    .reviews-faq-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align both items at the top */
+    max-width: 900px;
+    margin: auto;
+    gap: 20px;
+}
+
+
+.card, .faq-card {
+    width: 48%; /* Adjust width to be equal */
+    min-width: 350px; /* Ensures they don’t get too small */
+}
+
+
+/* Style FAQ card */
+.faq-card {
+    background: black;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff;
+}
+
+.faq-item {
+    margin-top: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    color: white;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Flex container to align sections */
+.cta-reviews-faq-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px; /* Adjust as needed */
+    margin: auto;
+    gap: 20px; /* Adds spacing between sections */
+}
+
+/* Styling for the three sections */
+.cta-box, .reviews-box, .faq-box {
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Width settings to fit in one row */
+.cta-box {
+    width: 35%;
+}
+
+.reviews-box {
+    width: 35%;
+}
+
+.faq-box {
+    width: 28%; /* Reduce width so it aligns well */
+    min-width: 300px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .cta-reviews-faq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-box, .reviews-box, .faq-box {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Responsive for mobile */
+/*@media (max-width: 768px) {
+    .reviews-faq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .faq-card {
+        width: 100%;
+    }
+}*/
+
+
+
 </style>   
 
 <style>
@@ -493,6 +612,7 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
     border-radius: 5px;
     display: inline-block;
     margin-top: 15px;
+    visibility: visible !important; /* Forces visibility */
 }
 .cta-button:hover {
     background: #d67914;
@@ -523,10 +643,14 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
     background: #3C3C3C;
     color: white;
     padding: 40px 20px;
+    display: block !important;
+    visibility: visible !important;
 }
 .cta-section h2 {
     margin-bottom: 10px;
 }
+
+
 
 /* WhatsApp Widget */
 .whatsapp-widget {
@@ -580,15 +704,324 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
 }
 </style>
 
+<style>
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-logo,
+    .mobile-logo {
+        height: 90px;
+        width: auto;
+        max-width: 150px;
+    }
+
+    /* Hide the second logo on larger screens */
+    .mobile-logo {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /* Ensure the second logo appears on mobile */
+    @media (max-width: 768px) {
+        .mobile-logo {
+            visibility: visible;
+            position: static;
+        }
+    }
+</style>
+
+<style>
+    .cta-buton {
+        display: none; /* Hidden by default */
+    }
+
+    @media (max-width: 768px) {
+        .cta-buton {
+            display: block;
+            width: 100%;
+            background-color: #F7931E; /* Mr Boiler Orange */
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .cta-buton:hover {
+            background-color: #d97916; /* Darker shade on hover */
+        }
+    }
+</style>
+
+
+
+<!-- CSS Styling -->
+<style>
+    /* Widget Styling */
+    #reviews-widget {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        font-family: Arial, sans-serif;
+    }
+
+    #toggle-reviews {
+        background: #F7931E; /* Mr Boiler Orange */
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #reviews-container {
+        display: none; /* Hidden by default */
+        width: 300px;
+        max-height: 350px;
+        overflow-y: auto;
+        background: #1A2B48; /* Mr Boiler Dark Blue */
+        color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #reviews-container h3 {
+        color: #F7931E;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .review {
+        background: #fff;
+        color: #000;
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .review .author {
+        font-weight: bold;
+    }
+
+    /* Responsive Design */
+   /* @media (max-width: 768px) {
+        #reviews-widget {
+            left: 10px;
+            bottom: 10px;
+        }
+
+        #reviews-container {
+            width: 260px;
+            max-height: 300px;
+        }
+    }*/
+
+   /* Hide the Google Reviews widget on mobile screens 
+@media (max-width: 768px) {
+    #google-reviews-widget {
+        display: none !important;
+    }
+}*/
+
+@media (max-width: 768px) {
+    #reviews-container {
+        display: block !important;
+        visibility: visible !important;
+    }
+}
+
+/* Adjust positioning to avoid overlap with WhatsApp widget */
+#google-reviews-widget {
+    position: fixed;
+    left: 20px;
+    bottom: 80px; /* Adjust this value if the WhatsApp widget is still too close */
+    z-index: 1000;
+}
+
+</style>
+
+<style>
+.image-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background-color: #fff; /* Adjust background if necessary */
+    padding: 10px 0;
+}
+
+.slider-track {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between images */
+    animation: scrollImages 20s linear infinite; /* Continuous scrolling */
+}
+
+.slider-img {
+    height: 80px; /* Adjust size */
+    width: auto;
+}
+
+@keyframes scrollImages {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+</style>
+
+
+<style>
+    /* Parent Container */
+    .trust-badge-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f8f8f8;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Badge Icon */
+    .badge-icon {
+        font-size: 50px;
+        color: #2c8f2e;
+        margin-right: 15px;
+    }
+
+    /* Text Styling */
+    .badge-text {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        text-align: left;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+        .trust-badge-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .badge-icon {
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
+
+<style>
+  .faq-container {
+    max-width: 350px;
+    width: 100%;
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5);
+    font-family: Arial, sans-serif;
+    
+    /* Fixed in the same column as reviews */
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+}
+
+/* FAQ Question Styling */
+.faq-question {
+    width: 100%;
+    background: #333;
+    color: white;
+    border: none;
+    text-align: left;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.faq-question:hover {
+    background: #444;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background: #111;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Ensure the FAQ does not scroll with the page */
+.faq-container.fixed {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .faq-container {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+</style>
 </head>
 <body class="home page-template-default page page-id-9 wp-embed-responsive  oxygen-body" style="background-color: #3C3C3C;">
 
 
 
 
-<div id="div_block-21-8" class="ct-div-block" style="background-color: #3C3C3C;"><!--<a id="link-22-8" class="ct-link top-bar-col" href="tel:01206912068"   ><div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div><div id="text_block-24-8" class="ct-text-block" >01206 912068</div></a><a id="link-25-8" class="ct-link top-bar-col" href="contact-us/index.html"   ><div id="fancy_icon-26-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-26-8"><use xlink:href="#FontAwesomeicon-pencil"></use></svg></div><div id="text_block-27-8" class="ct-text-block" >Online Quote</div></a>--></div><header id="div_block-64-8" class="ct-div-block" style="background-color: #3C3C3C;"><div id="div_block-60-8" class="ct-div-block inner-content" style="background-color: #3C3C3C;"><a id="logo-link" class="ct-link" href="index.html" target="_self"  ><img  id="logo" alt="mr boiler experts logo " src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" style="height: 90px; width: 150px;" class="ct-image" data-lazy-src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico""/><noscript><!--<img  id="logo" alt="mr boiler services logo " src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/>--></noscript></a><a id="div_block-44-8" class="ct-link header-cta-wrap" href="#"   ><img  id="image-100-8" alt="Gas safe logo" src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image" data-lazy-src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/call.svg"/><noscript><!--<img  id="image-100-8" alt="Gas safe logo" src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/>--></noscript></a><a id="div_block-53-8" class="ct-link header-cta-wrap" href="tel:01206 978443"   ><img  id="image-55-8" alt="call" src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/call.svg" class="ct-image btn-call-img"/><div id="link_text-58-8" class="ct-text-block white-link text-top-margin" >01206 978443<br></div></a><a id="div_block-38-8" class="ct-link btn btn-green" href="contact-us/index.html"   ><div id="text_block-39-8" class="ct-text-block" >Service Plans</div></a></div><div id="div_block-72-8" class="ct-div-block" >
-		<div id="-pro-menu-73-8" class="oxy-pro-menu " ><div class="oxy-pro-menu-mobile-open-icon " data-off-canvas-alignment=""><svg id="-pro-menu-73-8-open-icon"><use xlink:href="#FontAwesomeicon-bars"></use></svg></div>
+<div id="div_block-21-8" class="ct-div-block" style="background-color: #3C3C3C;"><!--<a id="link-22-8" class="ct-link top-bar-col" href="tel:01206912068"   ><div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div><div id="text_block-24-8" class="ct-text-block" >01206 912068</div></a><a id="link-25-8" class="ct-link top-bar-col" href="contact-us/index.html"   ><div id="fancy_icon-26-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-26-8"><use xlink:href="#FontAwesomeicon-pencil"></use></svg></div><div id="text_block-27-8" class="ct-text-block" >Online Quote</div></a>--></div><header id="div_block-64-8" class="ct-div-block" style="background-color: #3C3C3C;"><div id="div_block-60-8" class="ct-div-block inner-content" style="background-color: #3C3C3C;"><a id="logo-link" class="ct-link" href="index.html" target="_self"  >
+    <div class="logo-container">
+        <img id="logo" alt="Mr Boiler Experts Logo" 
+            src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" 
+            class="ct-image main-logo" />
+    
+        <img id="mobile-logo" alt="Alternate Logo" 
+            src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png"
+            class="ct-image mobile-logo" />
+    </div>
+<noscript><!--<img  id="logo" alt="mr boiler services logo " src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/>--></noscript></a><a id="div_block-44-8" class="ct-link header-cta-wrap" href="#"   ><img  id="image-100-8" alt="Gas safe logo" src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image" data-lazy-src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/call.svg"/><noscript><img  id="image-100-8" alt="Gas safe logo" src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/></noscript></a><a id="div_block-53-8" class="ct-link header-cta-wrap" href="tel:01206 978443">
+<img  id="image-55-8" alt="call" src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/mr-boiler-call-1.png" class="ct-image btn-call-img"/>
+<div id="link_text-58-8" class="ct-text-block white-link text-top-margin" >01206 978443<br>
+</div></a><a id="div_block-38-8" class="ct-link btn btn-green"  href="./mrboilerservices.co.uk/boiler-servicing-plans/index.html"   >
+<div id="text_block-39-8" class="ct-text-block" >Boiler Service Plans</div></a></div><div id="div_block-72-8" class="ct-div-block" >
+    
+<div id="-pro-menu-73-8" class="oxy-pro-menu " >
+<div class="oxy-pro-menu-mobile-open-icon " data-off-canvas-alignment="">
+<svg id="-pro-menu-73-8-open-icon"><use xlink:href="#FontAwesomeicon-bars"></use></svg></div>
 
+<a href="./mrboilerservices.co.uk/boiler-servicing-plans/index.html" class="cta-buton">Book A Service</a>
                 
         <div class="oxy-pro-menu-container  oxy-pro-menu-dropdown-links-visible-on-mobile oxy-pro-menu-dropdown-links-toggle oxy-pro-menu-show-dropdown" data-aos-duration="400" 
 
@@ -601,16 +1034,16 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
              
                           data-oxy-pro-menu-dropdown-links-on-mobile="toggle">
              
-            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="oxy-pro-menu-list"><li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-169"><a title="Elementis Boiler Experts" href="index.html" aria-current="page">Home</a></li>
-<li id="menu-item-180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180"><a href="./mrboilerservices.co.uk/our-services/index.html">Our Services</a>
-<!--<ul class="sub-menu">
-	<li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a title="New Boiler Colchester" href="#">New Boiler</a></li>
-	<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a title="Boiler Installation Colchester" href="#">Boiler Installation</a></li>
-	<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173"><a title="Boiler Repair Colchester" href="#">Boiler Repair</a></li>
-	<li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a title="Boiler Service Colchester" href="#">Boiler Service</a></li>
-	<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a title="Heating Engineer Colchester" href="#">Heating Engineer</a></li>
-	<li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a title="Power flushing Colchester" href="#">Power Flushing</a></li>
-</ul>-->
+            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="oxy-pro-menu-list"><li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-169"><a title="Mr Boiler Services" href="https://mrboilerservices.co.uk/" aria-current="page">Home</a></li>
+<li id="menu-item-180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180 menu-item-has-children"><a href="#">Our Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a title="Boiler Servicing & Repairs Colchester" href="./mrboilerservices.co.uk/our-services/boiler-servicing-&-repairs/index.html">Boiler Servicing & Repairs</a></li>
+	<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a title="Plumbing & Heating Installation Colchester" href="./mrboilerservices.co.uk/our-services/Central-heating-installations/index.html">Plumbing & Heating Installation</a></li>
+	<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173"><a title="Gas Boiler Istallations Colchester" href="./mrboilerservices.co.uk/our-services/Gas-boiler-installations/index.html">Gas Boiler Installation</a></li>
+	<li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a title="Gas Safety Checks Colchester" href="./mrboilerservices.co.uk/our-services/Gas-safety-checks/index.html">Gas Safety checks</a></li>
+	<!--<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a title="Heating Engineer Colchester" href="#">Heating Engineer</a></li>
+	<li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a title="Power flushing Colchester" href="#">Power Flushing</a></li>-->
+</ul>
 </li>
 <li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a title="Boiler Servicing Plans Colchester" href="./mrboilerservices.co.uk/boiler-servicing-plans/index.html">Service Plans</a></li>
 <li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-184"><a href="./mrboilerservices.co.uk/about-us/index.html">About Us</a>
@@ -647,77 +1080,204 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
 </div>
 
 </div>
-<!--<div id="home-hero" class="ct-div-block " ><img  id="image-11-9" alt="play" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image " data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/play.svg"/><noscript><img  id="image-11-9" alt="play" src="wp-content/uploads/2022/08/play.svg" class="ct-image "/></noscript><div id="text_block-12-9" class="ct-text-block" >Watch Our Video</div></div><a id="div_block-474-9" class="ct-link" href="reviews/index.html"   ><img  id="image-473-9" alt="which trusted trader logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/08/Which-Trusted-Trader-Logo.svg"/><noscript><img  id="image-473-9" alt="which trusted trader logo" src="wp-content/uploads/2023/08/Which-Trusted-Trader-Logo.svg" class="ct-image"/></noscript></a><div id="div_block-14-9" class="ct-div-block header-cta-wrap" ><div id="text_block-16-9" class="ct-text-block text-top-margin" >We're rated Excellent</div><img  id="image-15-9" alt="reviews" src="wp-content/uploads/2022/08/reviews.svg" class="ct-image reviews-stars"/></div></div></div></section>--><section id="div_block-134-9" class="ct-div-block" ><div id="div_block-21-9" class="ct-div-block inner-content" ><a id="div_block-22-9" class="ct-link service-card" href="./mrboilerservices.co.uk/our-services/boiler-servicing-&-repairs/index.html"   ><img  id="image-100-9" alt="new boiler" src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Intergas service (1).jpg" class="ct-image service-card-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2023/08/Intergas service (1).jpg 992w, ./mrboilerservices.co.uk/wp-content/uploads/2023/08/Intergas service (1)-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" /><div id="div_block-28-9" class="ct-div-block service-card-btn" ><!--<img  id="image-113-9" alt="elementis" src="wp-content/uploads/2022/08/New-Boiler.svg" class="ct-image service-card-btn-img"> -->
+<!--<div id="home-hero" class="ct-div-block " >
+<img  id="image-11-9" alt="play" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" 
+class="ct-image " data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/play.svg"/>
+<noscript><img  id="image-11-9" alt="play" src="wp-content/uploads/2022/08/play.svg" class="ct-image "/></noscript>
+<div id="text_block-12-9" class="ct-text-block" >Watch Our Video</div></div>
+<a id="div_block-474-9" class="ct-link" href="reviews/index.html"   >
+<img  id="image-473-9" alt="which trusted trader logo" 
+src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" 
+class="ct-image" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/08/Which-Trusted-Trader-Logo.svg"/>
+<noscript><img  id="image-473-9" alt="which trusted trader logo" src="wp-content/uploads/2023/08/Which-Trusted-Trader-Logo.svg" 
+class="ct-image"/></noscript></a><div id="div_block-14-9" class="ct-div-block header-cta-wrap" ><div id="text_block-16-9" 
+class="ct-text-block text-top-margin" >We're rated Excellent</div><img  id="image-15-9" alt="reviews" 
+src="wp-content/uploads/2022/08/reviews.svg" class="ct-image reviews-stars"/></div></div></div></section>-->
+<section id="div_block-134-9" class="ct-div-block" ><div id="div_block-21-9" class="ct-div-block inner-content" >
+<a id="div_block-22-9" class="ct-link service-card" href="./mrboilerservices.co.uk/our-services/boiler-servicing-&-repairs/index.html"   ><img  id="image-100-9" alt="new boiler" src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Ideal logic service (1).jpg" class="ct-image service-card-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2023/08/Ideal logic service (1).jpg 992w, ./mrboilerservices.co.uk/wp-content/uploads/2023/08/Ideal logic service (1)-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" /><div id="div_block-28-9" class="ct-div-block service-card-btn" ><!--<img  id="image-113-9" alt="elementis" src="wp-content/uploads/2022/08/New-Boiler.svg" class="ct-image service-card-btn-img"> -->
 <h2 id="headline-103-9" class="ct-headline service-card-h2" >BOILER SERVICING & REPAIRS</h2></div></a>
 <a id="div_block-116-9" class="ct-link service-card" href="./mrboilerservices.co.uk/our-services/Central-heating-installations/index.html" >
-<img  id="image-117-9" alt="boiler repair" src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/Boiler-service-ideal-logic (2).jpg" class="ct-image service-card-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/Boiler-service-ideal-logic (2).jpg 992w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/Boiler-service-ideal-logic (2)-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" /><div id="div_block-118-9" class="ct-div-block service-card-btn" >
+<img  id="image-117-9" alt="boiler repair" src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/plumbing-&-heating-installation-photo.jpg" 
+class="ct-image service-card-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/28 C_M (2).jpg 992w, 
+./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/28 C_M (2)-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" />
+<div id="div_block-118-9" class="ct-div-block service-card-btn" >
 <!--<img  id="image-119-9" alt="elementis boiler" src="wp-content/uploads/2022/08/Boiler-Repair.svg" class="ct-image service-card-btn-img"/>-->
-<h2 id="headline-120-9" class="ct-headline service-card-h2">CENTRAL HEATING INSTALLATIONS</h2></div></a><a id="div_block-121-9" class="ct-link service-card" href="./mrboilerservices.co.uk/our-services/Gas-boiler-installations/index.html"   >
-<img  id="image-122-9" alt="boiler service" src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/Intergas boiler service (2).jpg" class="ct-image service-card-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/Intergas boiler service (2).jpg 992w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/Intergas boiler service (2)-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" /><div id="div_block-123-9" class="ct-div-block service-card-btn" >
+<h2 id="headline-120-9" class="ct-headline service-card-h2">PLUMBING & HEATING INSTALLATIONS</h2></div></a><a id="div_block-121-9" 
+class="ct-link service-card" href="./mrboilerservices.co.uk/our-services/Gas-boiler-installations/index.html"   >
+<img  id="image-122-9" alt="boiler service" src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/Intergas boiler service (3).jpg" 
+class="ct-image service-card-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/Intergas boiler service (3).jpg 992w, 
+./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/Intergas boiler service (3)-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" />
+<div id="div_block-123-9" class="ct-div-block service-card-btn" >
 <!--<img  id="image-124-9" alt="elementis boiler experts" src="wp-content/uploads/2022/08/Boiler-Service.svg" class="ct-image service-card-btn-img"/>-->
-<h2 id="headline-125-9" class="ct-headline service-card-h2">GAS BOILER INSTALLATIONS</h2></div></a><a id="link-424-9" class="ct-link service-card" href="./mrboilerservices.co.uk/our-services/Gas-safety-checks/index.html">
-<img  id="image-425-9" alt="boiler installation" src="./mrboilerservices.co.uk/wp-content/uploads/2023/02/Baxi-Service.jpg" class="ct-image service-card-img" srcset="./mrboilerservices.co.uk/wp-content/uploads/2023/02/Baxi-Service.jpg 992w, ./mrboilerservices.co.uk/wp-content/uploads/2023/02/Baxi-Service-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" /><div id="div_block-426-9" class="ct-div-block service-card-btn" >
-<!--<img  id="image-427-9" alt="elementis boiler experts colchester" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image service-card-btn-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/02/Boiler-installation.svg"/><noscript><img  id="image-427-9" alt="elementis boiler experts colchester" src="wp-content/uploads/2023/02/Boiler-installation.svg" class="ct-image service-card-btn-img"/></noscript>-->
-<h2 id="headline-428-9" class="ct-headline service-card-h2">GAS SAFETY CHECKS</h2></div></a>
+<h2 id="headline-125-9" class="ct-headline service-card-h2">GAS BOILER INSTALLATIONS</h2></div></a>
+<!--<a id="link-424-9" class="ct-link service-card" href="./mrboilerservices.co.uk/our-services/Gas-safety-checks/index.html">
+<img  id="image-425-9" alt="boiler installation" src="./mrboilerservices.co.uk/wp-content/uploads/2023/02/Baxi-Service.jpg" 
+class="ct-image service-card-img" srcset="./mrboilerservices.co.uk/wp-content/uploads/2023/02/Baxi-Service.jpg 992w, 
+./mrboilerservices.co.uk/wp-content/uploads/2023/02/Baxi-Service-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" />
+<div id="div_block-426-9" class="ct-div-block service-card-btn" >-->
+<!--<img  id="image-427-9" alt="elementis boiler experts colchester" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" 
+class="ct-image service-card-btn-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/02/Boiler-installation.svg"/>
+<noscript><img  id="image-427-9" alt="elementis boiler experts colchester" src="wp-content/uploads/2023/02/Boiler-installation.svg" 
+class="ct-image service-card-btn-img"/></noscript>-->
+<!--<h2 id="headline-428-9" class="ct-headline service-card-h2">GAS SAFETY CHECKS</h2></div></a>-->
 <!--<a id="link-429-9" class="ct-link service-card" href="heating-engineer-colchester/index.html"   ><img  id="image-430-9" alt="heating engineer" src="wp-content/uploads/2023/02/Heating-Engineer.jpg" class="ct-image service-card-img" srcset="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/02/Heating-Engineer.jpg 992w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/02/Heating-Engineer-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" /><div id="div_block-431-9" class="ct-div-block service-card-btn" ><img  id="image-432-9" alt="elementis colchester" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image service-card-btn-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/02/Heating-engineer.svg"/><noscript><img  id="image-432-9" alt="elementis colchester" src="wp-content/uploads/2023/02/Heating-engineer.svg" class="ct-image service-card-btn-img"/></noscript><h2 id="headline-433-9" class="ct-headline service-card-h2">Heating Engineer</h2></div></a><a id="link-434-9" class="ct-link service-card" href="power-flushing-colchester/index.html"   ><img  id="image-435-9" alt="power flushing" src="wp-content/uploads/2023/02/Power-flushing.jpg" class="ct-image service-card-img" srcset="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/02/Power-flushing.jpg 992w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/02/Power-flushing-480x600.jpg 480w" sizes="(max-width: 992px) 100vw, 992px" /><div id="div_block-436-9" class="ct-div-block service-card-btn" ><img  id="image-437-9" alt="elementis boiler experts" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image service-card-btn-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/02/Powerflushing.svg"/><noscript><img  id="image-437-9" alt="elementis boiler experts" src="wp-content/uploads/2023/02/Powerflushing.svg" class="ct-image service-card-btn-img"/></noscript><h2 id="headline-438-9" class="ct-headline service-card-h2">Power Flushing</h2>--></div></a></div>
 <!--<div id="div_block-378-9" class="ct-div-block service-plan-section" ><div id="div_block-380-9" class="ct-div-block inner-content service-plan-wrap" ><div id="text_block-454-9" class="ct-text-block h2-style margin-bottom-xs" >Service Plans from £9 p/m</div><div id="text_block-457-9" class="ct-text-block h3-style" >Protect your pocket from big breakdown bills this winter.</div><div id="div_block-390-9" class="ct-div-block service-plan-img-grid" ><div id="div_block-399-9" class="ct-div-block serivce-plan-wrap" ><img  id="image-391-9" alt="Basic Plan" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan.png" class="ct-image service-plan-img" data-lazy-srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan.png 1600w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan-480x318.png 480w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan-992x657.png 992w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan-1024x678.png 1024w" data-lazy-sizes="(max-width: 1600px) 100vw, 1600px" data-lazy-src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan.png" /><noscript><img  id="image-391-9" alt="Basic Plan" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan.png" class="ct-image service-plan-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan.png 1600w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan-480x318.png 480w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan-992x657.png 992w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Basic-Boiler-Service-Plan-1024x678.png 1024w" sizes="(max-width: 1600px) 100vw, 1600px" /></noscript><div id="text_block-407-9" class="ct-text-block serivce-plan-heading" >Basic</div></div><div id="div_block-400-9" class="ct-div-block serivce-plan-wrap" ><img  id="image-392-9" alt="intermeditate plan" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan.png" class="ct-image service-plan-img" data-lazy-srcset="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan.png 1600w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan-480x318.png 480w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan-992x657.png 992w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan-1024x678.png 1024w" data-lazy-sizes="(max-width: 1600px) 100vw, 1600px" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan.png" /><noscript><img  id="image-392-9" alt="intermeditate plan" src="wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan.png" class="ct-image service-plan-img" srcset="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan.png 1600w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan-480x318.png 480w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan-992x657.png 992w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Intermeditate-Boiler-Service-Plan-1024x678.png 1024w" sizes="(max-width: 1600px) 100vw, 1600px" /></noscript><div id="text_block-404-9" class="ct-text-block serivce-plan-heading" >Intermediate</div></div><div id="div_block-401-9" class="ct-div-block serivce-plan-wrap" ><img  id="image-393-9" alt="advanced plan" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan.png" class="ct-image service-plan-img" data-lazy-srcset="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan.png 1600w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan-480x318.png 480w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan-992x657.png 992w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan-1024x678.png 1024w" data-lazy-sizes="(max-width: 1600px) 100vw, 1600px" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan.png" /><noscript><img  id="image-393-9" alt="advanced plan" src="wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan.png" class="ct-image service-plan-img" srcset="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan.png 1600w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan-480x318.png 480w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan-992x657.png 992w, https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/Advanced-Boiler-Service-Plan-1024x678.png 1024w" sizes="(max-width: 1600px) 100vw, 1600px" /></noscript><div id="text_block-403-9" class="ct-text-block serivce-plan-heading" >Advanced</div></div></div><a id="div_block-387-9" class="ct-link btn btn-green" href="boiler-servicing-plans/index.html"   ><div id="text_block-388-9" class="ct-text-block" >View Boiler Plans</div></a></div></div>-->
+
+
+<div class="image-slider">
+    <div class="slider-track">
+        <img src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/baxi.png" alt="Gas Safe Logo" class="slider-img">
+        <img src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/gas-safe-1.png" alt="Gas Safe Logo" class="slider-img">
+        <img src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/Glowworm.png" alt="Glowworm Logo" class="slider-img">
+        <img src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/Ideal.png" alt="Ideal Heating Logo" class="slider-img">
+        <img src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Glowworm.png" alt="Glowworm Logo" class="slider-img">
+        <img src="./mrboilerservices.co.uk/wp-content/uploads/2023/08/Potterton.png" alt="Potterton Logo" class="slider-img">
+        <img src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/Vaillant.png" alt="Vaillant Logo" class="slider-img">
+        <img src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/baxi.png" alt="Baxi Logo" class="slider-img">
+    </div>
+</div>
+
+
+
 <div id="div_block-138-9" class="ct-div-block image-section-wrap image-section-margin-bottom" >
-    <header class="header">
-        <h1>Mr Boiler Services</h1>
-        <p>Your trusted partner in boiler installations and repairs.</p>
-        <a href="./mrboilerservices.co.uk/boiler-servicing-plans/index.html" class="cta-button">Get a Service Plan</a>
-    </header>
+    <div class="cta-reviews-faq-container">
+                <div class="cta-content">
+                    <header class="header">
+                        <h1>Mr Boiler Services</h1>
+                            <p>Your trusted partner in boiler installations and repairs.</p>
+                            <a href="./mrboilerservices.co.uk/boiler-servicing-plans/index.html" class="cta-button">Get a Service Plan</a>
+                    </header>
+                </div>
+            </div>
+    
+
+    
 <!--<img  id="image-141-9" alt="Mr Boiler Services" src="./mrboilerservices.co.uk/wp-content/uploads/2022/08/mr-boiler-removebg-preview.png" class="ct-image image-section-img image-section-col" data-lazy-srcset="https://mrboilerservices.co.uk/wp-content/uploads/2022/08/mr-boiler-removebg-preview.png 1080w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts.png 480w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts.png 992w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts.png 1024w" data-lazy-sizes="(max-width: 1080px) 100vw, 1080px" data-lazy-src="https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts.png" />--><noscript>
     
-<!--<img  id="image-141-9" alt="Mr Boiler Services" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/Mr-Boiler-Experts.png" class="ct-image image-section-img image-section-col" srcset="https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts.png 1080w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts.png 480w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts-992x992.png 992w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts-1024x1024.png 1024w" sizes="(max-width: 1080px) 100vw, 1080px" />--></noscript><div id="div_block-133-9" class="ct-div-block image-section-col" ><div id="div_block-143-9" class="ct-div-block image-section-body image-section-body-right" ><!--<h2 id="headline-273-9" class="ct-headline margin-bottom-s centered-text center-element" style="color: #ffffff;">Welcome to Mr Boiler Services</h2><div id="text_block-145-9" class="ct-text-block centered-text" style="color: #ffffff;">Mr Boiler Services are a family-run heating and Gas Safe registered company based in Stanway, Colchester. We have vast experience in our trade and pride ourselves on striving to be the best of the best.</div>--><!--<div id="div_block-147-9" class="ct-div-block benefit-wrap" ><img  id="image-150-9" alt="Mr Boiler Services Colchester" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/engineer.svg" class="ct-image benefit-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/engineer.svg"/><noscript><img  id="image-150-9" alt="Mr Boiler Services Colchester" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/engineer.svg" class="ct-image benefit-img"/></noscript><div id="div_block-149-9" class="ct-div-block benefit-text" ><div id="text_block-153-9" class="ct-text-block benefit-heading" >Experienced team</div><div id="text_block-155-9" class="ct-text-block" >Our fully qualified team are highly experienced and&nbsp;pride themselves on striving to be the best of the best.<br></div></div></div><div id="div_block-278-9" class="ct-div-block benefit-wrap" ><img  id="image-279-9" alt="local" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/local.svg" class="ct-image benefit-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/local.svg"/><noscript><img  id="image-279-9" alt="local" src="wp-content/uploads/2022/08/local.svg" class="ct-image benefit-img"/></noscript><div id="div_block-280-9" class="ct-div-block benefit-text" ><div id="text_block-281-9" class="ct-text-block benefit-heading" >Local, friendly team</div><div id="text_block-282-9" class="ct-text-block" >As a local, independently run business we provide our customers with a friendly, personable service.&nbsp;</div></div></div><div id="div_block-283-9" class="ct-div-block benefit-wrap" ><img  id="image-284-9" alt="recommended" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/recommended.svg" class="ct-image benefit-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/recommended.svg"/><noscript><img  id="image-284-9" alt="recommended" src="wp-content/uploads/2022/08/recommended.svg" class="ct-image benefit-img"/></noscript><div id="div_block-285-9" class="ct-div-block benefit-text" ><div id="text_block-286-9" class="ct-text-block benefit-heading" >Highly recommended</div><div id="text_block-287-9" class="ct-text-block" >We have a great reputation throughout the Essex area and are proud to have over 50 verified 5-star customer reviews.</div></div></div><a id="div_block-184-9" class="ct-link btn btn-green center-element" href="about-us/index.html"   ><div id="text_block-185-9" class="ct-text-block" >Read More About Us</div></a></div></div></div>--><section id="section-199-9"><!-- Optimized Reviews Slider for Mr. Boiler Services -->
-    <div class="card">
-        <h2>Our Reviews</h2>
-        <img id="review-avatar" class="avatar" src="" alt="Reviewer Avatar">
-        <div class="review-container active" id="review-container">
-            <p id="review-text"> Amazing service! Highly recommend.</p>
-            <div class="stars" id="stars">★★★★★</div>
-            <p id="review-name">- John Doe</p>
-        </div>
-        <div class="buttons">
-            <button class="prev" onclick="prevReview()">Previous</button>
-            <button class="next" onclick="nextReview()">Next</button>
+<!--<img  id="image-141-9" alt="Mr Boiler Services" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/Mr-Boiler-Experts.png" class="ct-image image-section-img image-section-col" srcset="https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts.png 1080w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts.png 480w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts-992x992.png 992w, https://mrboilerservices.co.uk/wp-content/uploads/2022/08/Mr-Boiler-Experts-1024x1024.png 1024w" sizes="(max-width: 1080px) 100vw, 1080px" />--></noscript><div id="div_block-133-9" class="ct-div-block image-section-col" ><div id="div_block-143-9" class="ct-div-block image-section-body image-section-body-right" >
+    
+<!--<h2 id="headline-273-9" class="ct-headline margin-bottom-s centered-text center-element" style="color: #ffffff;">Welcome to Mr Boiler Services</h2><div id="text_block-145-9" class="ct-text-block centered-text" style="color: #ffffff;">Mr Boiler Services are a family-run heating and Gas Safe registered company based in Stanway, Colchester. We have vast experience in our trade and pride ourselves on striving to be the best of the best.</div>--><!--<div id="div_block-147-9" class="ct-div-block benefit-wrap" ><img  id="image-150-9" alt="Mr Boiler Services Colchester" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/engineer.svg" class="ct-image benefit-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/engineer.svg"/><noscript><img  id="image-150-9" alt="Mr Boiler Services Colchester" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/engineer.svg" class="ct-image benefit-img"/></noscript><div id="div_block-149-9" class="ct-div-block benefit-text" ><div id="text_block-153-9" class="ct-text-block benefit-heading" >Experienced team</div><div id="text_block-155-9" class="ct-text-block" >Our fully qualified team are highly experienced and&nbsp;pride themselves on striving to be the best of the best.<br></div></div></div><div id="div_block-278-9" class="ct-div-block benefit-wrap" ><img  id="image-279-9" alt="local" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/local.svg" class="ct-image benefit-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/local.svg"/><noscript><img  id="image-279-9" alt="local" src="wp-content/uploads/2022/08/local.svg" class="ct-image benefit-img"/></noscript><div id="div_block-280-9" class="ct-div-block benefit-text" ><div id="text_block-281-9" class="ct-text-block benefit-heading" >Local, friendly team</div><div id="text_block-282-9" class="ct-text-block" >As a local, independently run business we provide our customers with a friendly, personable service.&nbsp;</div></div></div><div id="div_block-283-9" class="ct-div-block benefit-wrap" ><img  id="image-284-9" alt="recommended" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/recommended.svg" class="ct-image benefit-img" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2022/08/recommended.svg"/><noscript><img  id="image-284-9" alt="recommended" src="wp-content/uploads/2022/08/recommended.svg" class="ct-image benefit-img"/></noscript><div id="div_block-285-9" class="ct-div-block benefit-text" ><div id="text_block-286-9" class="ct-text-block benefit-heading" >Highly recommended</div><div id="text_block-287-9" class="ct-text-block" >We have a great reputation throughout the Essex area and are proud to have over 50 verified 5-star customer reviews.</div></div></div><a id="div_block-184-9" class="ct-link btn btn-green center-element" href="about-us/index.html"   ><div id="text_block-185-9" class="ct-text-block" >Read More About Us</div></a></div></div></div>-->
+
+<section id="section-199-9"><!-- Optimized Reviews Slider for Mr. Boiler Services -->
+    <div class="cta-reviews-faq-container">
+        <div class="reviews-box">
+            <div class="review-content">
+                <div class="card">
+                    <h2>Our Reviews</h2>
+                    <div class="review-container active" id="review-container">
+                        <p id="review-text"> Amazing service! Highly recommend.</p>
+                        <div class="stars" id="stars">★★★★★</div>
+                        <p id="review-name">- John Doe</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="prev" onclick="prevReview()">Previous</button>
+                        <button class="next" onclick="nextReview()">Next</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
+    
     <script>
         const reviews = [
-            { name: "Faye Scully , Chelmsford", text: "My Family has been using Simon For a long time and has always been very helpful and friendly. Would recommend this company to anyone looking for a reliable service. Happy with any work he has done.", rating: 5, avatar: "https://randomuser.me/api/portraits/men/1.jpg" },
-            { name: "Toni Upton , Mistley", text: "You won't get anyone better. Simon is reliable, professional, noting is too much trouble. Reasonable priced. I have use Mr Boiler Services for the last couple of years, highly recommend.", rating: 4, avatar: "https://randomuser.me/api/portraits/women/2.jpg" },
-            { name: "Della Chubb , Colchester", text: "Simon is fab, helpful, reliable and such a great business", rating: 5, avatar: "https://randomuser.me/api/portraits/men/3.jpg" }
+            { 
+                name: "Faye Scully , Chelmsford", 
+                text: "My Family has been using Simon For a long time and has always been very helpful and friendly. Would recommend this company to anyone looking for a reliable service. Happy with any work he has done.", 
+                rating: 5 
+            },
+            { 
+                name: "Toni Upton , Mistley", 
+                text: "You won't get anyone better. Simon is reliable, professional, nothing is too much trouble. Reasonable priced. I have used Mr Boiler Services for the last couple of years, highly recommend.", 
+                rating: 4 
+            },
+            { 
+                name: "Della Chubb , Colchester", 
+                text: "Simon is fab, helpful, reliable and such a great business", 
+                rating: 5 
+            }
         ];
-        
+    
         let index = 0;
-
+    
         function updateReview() {
             const reviewContainer = document.getElementById("review-container");
-            reviewContainer.classList.remove("active");
+            reviewContainer.classList.remove("active"); // Animation effect
             setTimeout(() => {
                 document.getElementById("review-text").textContent = reviews[index].text;
                 document.getElementById("review-name").textContent = "- " + reviews[index].name;
                 document.getElementById("stars").textContent = "★".repeat(reviews[index].rating) + "☆".repeat(5 - reviews[index].rating);
-                document.getElementById("review-avatar").src = reviews[index].avatar;
                 reviewContainer.classList.add("active");
             }, 300);
         }
-
+    
         function nextReview() {
             index = (index + 1) % reviews.length;
             updateReview();
         }
-
+    
         function prevReview() {
             index = (index - 1 + reviews.length) % reviews.length;
             updateReview();
         }
-
+    
         setInterval(nextReview, 5000); // Automatically switch reviews every 5 seconds
     </script>
-    </section></section><div id="div_block-192-9" class="ct-div-block leadm-section" ><img  id="image-193-9" alt="5 things you should know before buying a boiler" src="./mrboilerservices.co.uk/wp-content/uploads/2022/09/boiler-image.PNG" class="ct-image leadm-img" data-lazy-srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.png 992w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.png 480w" data-lazy-sizes="(max-width: 992px) 100vw, 992px" data-lazy-src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.PNG" /><noscript><img  id="image-193-9" alt="Mr Boiler Service" src="./mrboilerservices.co.uk/wp-content/uploads/2022/09/boiler-image.PNG" class="ct-image leadm-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.png 992w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.PNG 480w" sizes="(max-width: 992px) 100vw, 992px" /></noscript>
+
+
+
+    
+    </section>
+
+
+
+    </section>
+
+            <!-- FAQ Section -->
+ <!-- FAQ Section -->
+ <!--<div class="cta-reviews-faq-container">
+    <div class="faq-box">
+        <div class="faq-card">
+                <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">What services do you offer? <span class="arrow">▼</span></button>
+                <div class="faq-answer">
+                    <p>We provide boiler installations, repairs, and servicing to ensure efficiency and safety.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Do you offer emergency support? <span class="arrow">▼</span></button>
+                <div class="faq-answer">
+                    <p>Yes! Our engineers are available for emergency call-outs to fix urgent boiler issues.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Are your engineers certified? <span class="arrow">▼</span></button>
+                <div class="faq-answer">
+                    <p>Absolutely! All our engineers are fully certified and Gas Safe registered.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+ </div>-->
+ 
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle('active');
+    });
+});
+
+
+</script>
+
+    <div id="div_block-192-9" class="ct-div-block leadm-section" ><img  id="image-193-9" alt="boiler" src="./mrboilerservices.co.uk/wp-content/uploads/2022/09/boiler-image.png" class="ct-image leadm-img" data-lazy-srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.png 992w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.png 480w" data-lazy-sizes="(max-width: 992px) 100vw, 992px" data-lazy-src="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.png" /><noscript><img  id="image-193-9" alt="Mr Boiler Service" src="./mrboilerservices.co.uk/wp-content/uploads/2022/09/boiler-image.png" class="ct-image leadm-img" srcset="./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.png 992w, ./mrboilerservices.co.uk/.com/wp-content/uploads/2022/09/boiler-image.png 480w" sizes="(max-width: 992px) 100vw, 992px" /></noscript>
 <div id="div_block-194-9" class="ct-div-block leadm-body" ><!--<div id="text_block-195-9" class="ct-text-block h2-style margin-bottom-xs h2-mobile" >Contact Us<br></div><div id="text_block-196-9" class="ct-text-block margin-bottom-xs" >Whether your boiler has broken down or you need to replace an existing heating system, make sure you make the best choice for your home.<br></div>--><div class="contact-form-container">
     <h2 class="contact-title">Get in Touch</h2>
     <p class="contact-subtitle">We are here to help with all your boiler and heating needs.</p>
@@ -738,8 +1298,10 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
         <button type="submit" class="contact-submit">Send Message</button>
     </form>
 </div>
-                        <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="143"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
-                        </div><script>
+                        <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="143"/>
+<script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
+                        </div>
+<!--<script>
 gform.initializeOnLoaded( function() {gformInitSpinner( 2, './mrboilerservices.co.uk/.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_2').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_2');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_2').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_2').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_2').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_2').val();gformInitSpinner( 2, './mrboilerservices.co.uk/.com/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [2, current_page]);window['gf_submitting_2'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_2').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [2]);window['gf_submitting_2'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_2').text());}else{jQuery('#gform_2').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "2", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);                if (event && event.defaultPrevented) {                return;         }        const gformWrapperDiv = document.getElementById( "gform_wrapper_2" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_2";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_2" );        let postRenderFired = false;                function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            jQuery( document ).trigger( 'gform_post_render', [2, current_page] );            gform.utils.trigger( { event: 'gform/postRender', native: false, data: { formId: 2, currentPage: current_page } } );            gform.utils.trigger( { event: 'gform/post_render', native: false, data: { formId: 2, currentPage: current_page } } );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
 </script>
 </div></div></div><!--<section id="section-219-9" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="text_block-261-9" class="ct-text-block h2-style center-element" >Help &amp; Advice</div><div id="_dynamic_list-220-9" class="oxy-dynamic-list "><div id="div_block-221-9-1" class="ct-div-block " data-id="div_block-221-9"><a id="link-222-9-1" class="ct-link bpost-card" href="./mrboilerservices.co.uk/.com/advice/are-all-2-port-valves-equal/index.html" target="_self" data-id="link-222-9"><img id="image-223-9-1" alt="boiler repair colchester (1)" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2024/01/boiler-repair-colchester-1.jpg" class="ct-image bpost-card-img" data-id="image-223-9" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2024/01/boiler-repair-colchester-1.jpg"><noscript><img id="image-223-9-1" alt="boiler repair colchester (1)" src="wp-content/uploads/2024/01/boiler-repair-colchester-1.jpg" class="ct-image bpost-card-img" data-id="image-223-9"></noscript><h3 id="headline-224-9-1" class="ct-headline" data-id="headline-224-9"><span id="span-225-9-1" class="ct-span" data-id="span-225-9">Are all 2 port valves equal?</span></h3></a></div><div id="div_block-221-9-2" class="ct-div-block " data-id="div_block-221-9"><a id="link-222-9-2" class="ct-link bpost-card" href="advice/how-to-save-money-on-your-central-heating-bills/index.html" target="_self" data-id="link-222-9"><img id="image-223-9-2" alt="save money on central heating" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2023/10/save-money-on-central-heating.png" class="ct-image bpost-card-img" data-id="image-223-9" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/10/save-money-on-central-heating.png"><noscript><img id="image-223-9-2" alt="save money on central heating" src="wp-content/uploads/2023/10/save-money-on-central-heating.png" class="ct-image bpost-card-img" data-id="image-223-9"></noscript><h3 id="headline-224-9-2" class="ct-headline" data-id="headline-224-9"><span id="span-225-9-2" class="ct-span" data-id="span-225-9">How to save money on your central heating bills</span></h3></a></div><div id="div_block-221-9-3" class="ct-div-block " data-id="div_block-221-9"><a id="link-222-9-3" class="ct-link bpost-card" href="advice/cheaper-doesnt-mean-value-when-choosing-a-boiler-company/index.html" target="_self" data-id="link-222-9"><img id="image-223-9-3" alt="screenshot 2023 06 23 at 05.16.36" src="./mrboilerservices.co.uk/.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-at-05.16.36.png" class="ct-image bpost-card-img" data-id="image-223-9" data-lazy-src="https://mrboilerservices.co.uk/.com/wp-content/uploads/2023/06/Screenshot-2023-06-23-at-05.16.36.png"><noscript><img id="image-223-9-3" alt="screenshot 2023 06 23 at 05.16.36" src="wp-content/uploads/2023/06/Screenshot-2023-06-23-at-05.16.36.png" class="ct-image bpost-card-img" data-id="image-223-9"></noscript><h3 id="headline-224-9-3" class="ct-headline" data-id="headline-224-9"><span id="span-225-9-3" class="ct-span" data-id="span-225-9">Cheaper doesn't mean value when choosing a boiler company</span></h3></a></div>                    
@@ -772,7 +1334,61 @@ gform.initializeOnLoaded( function() {gformInitSpinner( 2, './mrboilerservices.c
     </a>
 </div>
 
-        
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div id="reviews-widget" class="elfsight-app-43da90fe-1037-4f66-868b-729192cbad5c" data-elfsight-app-lazy></div>
+
+         <!-- Google Reviews Widget -->
+        <!-- <div id="reviews-widget">
+            <button id="toggle-reviews">5.0 ⭐⭐⭐⭐⭐<br>GOOGLE RATINGS</button>
+            <div id="reviews-container" style="display: none;">
+                <h3>Mr. Boiler Services Customer Reviews</h3>
+                <div id="reviews">Loading reviews...</div>
+            </div>
+        </div>-->
+
+<!-- JavaScript Code to Fetch Google Reviews & Toggle Widget -->
+<script>
+    async function fetchReviews() {
+    try {
+        const response = await fetch("http://localhost:5000/api/reviews"); // Your backend API
+        const data = await response.json();
+
+        const reviewsContainer = document.getElementById("reviews");
+        reviewsContainer.innerHTML = ""; // Clear previous content
+
+        if (data.reviews && data.reviews.length > 0) {
+            data.reviews.forEach(review => {
+                const reviewHTML = `
+                    <div class="review">
+                        <p class="author">
+                            <img src="${review.profile_photo}" alt="Profile" width="30" height="30" style="border-radius: 50%;"> 
+                            ${review.author} - ⭐${review.rating}
+                        </p>
+                        <p>${review.text}</p>
+                        <p><small>${review.time}</small></p>
+                    </div>
+                `;
+                reviewsContainer.insertAdjacentHTML("beforeend", reviewHTML);
+            });
+        } else {
+            reviewsContainer.innerHTML = "<p>No reviews found.</p>";
+        }
+    } catch (error) {
+        console.error("Error fetching reviews:", error);
+        document.getElementById("reviews").innerHTML = "<p>Failed to load reviews.</p>";
+    }
+}
+    // Toggle reviews visibility
+    document.getElementById("toggle-reviews").addEventListener("click", function () {
+    const reviewsContainer = document.getElementById("reviews-container");
+    reviewsContainer.style.display = (reviewsContainer.style.display === "none" || reviewsContainer.style.display === "") ? "block" : "none";
+
+    });
+
+    // Fetch reviews on page load
+    fetchReviews();
+</script>
 
         
 
@@ -810,14 +1426,45 @@ gform.initializeOnLoaded( function() {gformInitSpinner( 2, './mrboilerservices.c
             <div class="footer-bottom">
                 <p>&copy; 2024 Mr Boiler Services. All rights reserved.</p>
             </div>
+
+           
         
-    <div id="shortcode-75-8" class="ct-shortcode" >               <div  class="rplg" style="" data-id="1199"><div  class="rplg-badge-cnt                     rplg-badge_left-fixed                                         rplg-badge-hide        "><div class="rplg-badge2"                                data-provider="google"            ><div class="rplg-badge2-border"></div>
+    <div id="shortcode-75-8" class="ct-shortcode" >               <!--<div  class="rplg" style="" data-id="1199"><div  class="rplg-badge-cnt                     rplg-badge_left-fixed                                         rplg-badge-hide        "><div class="rplg-badge2"                                data-provider="google"            ><div class="rplg-badge2-border"></div>
     <div class="rplg-badge2-btn rplg-badge2-clickable"                                    ><span class="rplg-badge-logo"></span><div class="rplg-badge2-score">
         <div>                        Google Rating                        </div>
-    <div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div><div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 54 reviews</span></div></div></div></div>
-    <div class="rplg-form rplg-form-left" style="display:none"><div class="rplg-form-head"><div class="rplg-form-head-inner"><div class="rplg-row"><div class="rplg-row-left">
-    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" class="rplg-review-avatar" alt="Mr Boiler Services" width="50" height="50" title="Mr Boiler Services" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" data-lazy-src="#" ><noscript><img src="#" loading="lazy" class="rplg-review-avatar" alt="Mr Boiler Services" width="50" height="50" title="Mr Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" ></noscript></div>
-    <div class="rplg-form-footer"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%2018'%3E%3C/svg%3E" alt="powered by Google" width="144" height="18" title="powered by Google" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png"><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png" alt="powered by Google" width="144" height="18" title="powered by Google"></noscript></div></div><div class="rplg-badge2-close">×</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none"></noscript></div>                </div></div></footer>	<!-- WP_FOOTER -->
+<div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div>
+<div class="rplg-stars" data-info="5.0,google,"></div></div><div class="rplg-biz-based rplg-trim">
+<span class="rplg-biz-based-text">Based on 54 reviews</span></div></div></div></div>
+<div class="rplg-form rplg-form-left" style="display:none"><div class="rplg-form-head">
+<div class="rplg-form-head-inner">
+<div class="rplg-row"><div class="rplg-row-left">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" 
+class="rplg-review-avatar" alt="Mr Boiler Services" 
+width="50" height="50" title="Mr Boiler Services" 
+onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP
+///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///
+// yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" data-lazy-src="#" >-->
+<noscript>
+<img src="#" loading="lazy" class="rplg-review-avatar" alt="Mr Boiler Services" 
+width="50" height="50" title="Mr Boiler Experts" 
+onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')
+// this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" >
+</noscript></div>
+<!--<div class="rplg-form-footer"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%2018'%3E%3C/svg%3E" 
+alt="powered by Google" width="144" height="18" title="powered by Google" 
+data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png">
+<noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png" 
+alt="powered by Google" width="144" height="18" title="powered by Google"></noscript></div></div>
+<div class="rplg-badge2-close">×</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" 
+alt="js_loader" onload="(function(el, args) { var t = setInterval(function () 
+{ if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })
+(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none" 
+data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+alt="js_loader" onload="(function(el, args) { var t = setInterval(function () 
+{ if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })
+(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none"></noscript></div>                
+</div></div>--></footer>	<!-- WP_FOOTER -->
 <style>.ct-FontAwesomeicon-close{width:0.78571428571429em}</style>
 <style>.ct-FontAwesomeicon-pencil{width:0.85714285714286em}</style>
 <style>.ct-FontAwesomeicon-phone{width:0.78571428571429em}</style>
@@ -827,7 +1474,48 @@ gform.initializeOnLoaded( function() {gformInitSpinner( 2, './mrboilerservices.c
 <title>close</title><path d="M20.281 20.656c0 0.391-0.156 0.781-0.438 1.062l-2.125 2.125c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-4.594-4.594-4.594 4.594c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-2.125-2.125c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l4.594-4.594-4.594-4.594c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.594 4.594-4.594c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062s-0.156 0.781-0.438 1.062l-4.594 4.594 4.594 4.594c0.281 0.281 0.438 0.672 0.438 1.062z"/></symbol><symbol id="FontAwesomeicon-pencil" viewBox="0 0 24 28"><title>pencil</title><path d="M5.672 24l1.422-1.422-3.672-3.672-1.422 1.422v1.672h2v2h1.672zM13.844 9.5c0-0.203-0.141-0.344-0.344-0.344-0.094 0-0.187 0.031-0.266 0.109l-8.469 8.469c-0.078 0.078-0.109 0.172-0.109 0.266 0 0.203 0.141 0.344 0.344 0.344 0.094 0 0.187-0.031 0.266-0.109l8.469-8.469c0.078-0.078 0.109-0.172 0.109-0.266zM13 6.5l6.5 6.5-13 13h-6.5v-6.5zM23.672 8c0 0.531-0.219 1.047-0.578 1.406l-2.594 2.594-6.5-6.5 2.594-2.578c0.359-0.375 0.875-0.594 1.406-0.594s1.047 0.219 1.422 0.594l3.672 3.656c0.359 0.375 0.578 0.891 0.578 1.422z"/></symbol><symbol id="FontAwesomeicon-phone" viewBox="0 0 22 28"><title>phone</title><path d="M22 19.375c0 0.562-0.25 1.656-0.484 2.172-0.328 0.766-1.203 1.266-1.906 1.656-0.922 0.5-1.859 0.797-2.906 0.797-1.453 0-2.766-0.594-4.094-1.078-0.953-0.344-1.875-0.766-2.734-1.297-2.656-1.641-5.859-4.844-7.5-7.5-0.531-0.859-0.953-1.781-1.297-2.734-0.484-1.328-1.078-2.641-1.078-4.094 0-1.047 0.297-1.984 0.797-2.906 0.391-0.703 0.891-1.578 1.656-1.906 0.516-0.234 1.609-0.484 2.172-0.484 0.109 0 0.219 0 0.328 0.047 0.328 0.109 0.672 0.875 0.828 1.188 0.5 0.891 0.984 1.797 1.5 2.672 0.25 0.406 0.719 0.906 0.719 1.391 0 0.953-2.828 2.344-2.828 3.187 0 0.422 0.391 0.969 0.609 1.344 1.578 2.844 3.547 4.813 6.391 6.391 0.375 0.219 0.922 0.609 1.344 0.609 0.844 0 2.234-2.828 3.187-2.828 0.484 0 0.984 0.469 1.391 0.719 0.875 0.516 1.781 1 2.672 1.5 0.313 0.156 1.078 0.5 1.188 0.828 0.047 0.109 0.047 0.219 0.047 0.328z"/></symbol><symbol id="FontAwesomeicon-bars" viewBox="0 0 24 28"><title>bars</title><path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"/></symbol><symbol id="FontAwesomeicon-caret-down" viewBox="0 0 16 28"><title>caret-down</title><path d="M16 11c0 0.266-0.109 0.516-0.297 0.703l-7 7c-0.187 0.187-0.438 0.297-0.703 0.297s-0.516-0.109-0.703-0.297l-7-7c-0.187-0.187-0.297-0.438-0.297-0.703 0-0.547 0.453-1 1-1h14c0.547 0 1 0.453 1 1z"/></symbol></defs></svg>                <div class="rplg" style="" data-id="1199"><div class="rplg-badge-cnt                     rplg-badge_left-fixed                                         rplg-badge-hide        "><div class="rplg-badge2"                                data-provider="google"            ><div class="rplg-badge2-border"></div>
 <div class="rplg-badge2-btn rplg-badge2-clickable"                                    >
     <span class="rplg-badge-logo"></span><div class="rplg-badge2-score">
-<div>                        Google Rating                        </div><div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div><div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 54 reviews</span></div></div></div></div><div class="rplg-form rplg-form-left" style="display:none"><div class="rplg-form-head"><div class="rplg-form-head-inner"><div class="rplg-row"><div class="rplg-row-left"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" ><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" loading="lazy" class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" ></noscript></div><!--<div class="rplg-row-right rplg-trim">                                    Elementis Boiler Experts        <div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div></div><div class="wp-google-wr"><a href="https://search.google.com/local/writereview?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" rel="noopener nofollow" onclick="_rplg_popup(this.href, 800, 600);return !1">review us on<span data-logo="google"></span></a><a href="https://search.google.com/local/reviews?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" target="_blank" rel="noopener" onclick="return true;">See all reviews</a></div></div></div></div><button class="rplg-form-close" type="button" onclick="_rplg_get_parent(this, 'rplg-form').style.display='none'"></button></div>--><div class="rplg-form-footer"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%2018'%3E%3C/svg%3E" alt="powered by Google" width="144" height="18" title="powered by Google" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png"><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png" alt="powered by Google" width="144" height="18" title="powered by Google"></noscript></div></div><div class="rplg-badge2-close">×</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none"></noscript></div>                    <!-- Meta Pixel Event Code -->
+<!--<div>                        Google Rating                        </div><div >
+    <div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div>
+    <div class="rplg-stars" data-info="5.0,google,">
+
+</div></div><div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 54 reviews</span></div></div></div></div>
+<div class="rplg-form rplg-form-left" style="display:none"><div class="rplg-form-head">
+<div class="rplg-form-head-inner"><div class="rplg-row"><div class="rplg-row-left">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" 
+class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" 
+onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')
+// this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+// " data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" ><noscript>
+<img src="wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" loading="lazy" class="rplg-review-avatar" 
+alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" 
+onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')
+// this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" ></noscript>
+</div>--><!--<div class="rplg-row-right rplg-trim">                                    Elementis Boiler Experts        
+<div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div>
+<div class="rplg-stars" data-info="5.0,google,"></div></div></div><div class="wp-google-wr">
+<a href="https://search.google.com/local/writereview?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" 
+rel="noopener nofollow" onclick="_rplg_popup(this.href, 800, 600);return !1">review us on<span data-logo="google">
+
+</span></a><a href="https://search.google.com/local/reviews?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" 
+target="_blank" rel="noopener" onclick="return true;">See all reviews</a></div></div></div></div>
+<button class="rplg-form-close" type="button" onclick="_rplg_get_parent(this, 'rplg-form').style.display='none'"></button>
+</div>-->
+
+
+
+<!--<div class="rplg-form-footer"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%2018'%3E%3C/svg%3E" 
+alt="powered by Google" width="144" height="18" title="powered by Google" 
+data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png"><noscript>
+<img src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png" alt="powered by Google" width="144" height="18" title="powered by Google"></noscript></div></div>
+<div class="rplg-badge2-close">×</div></div></div>
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" alt="js_loader" 
+onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })
+(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none" 
+data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="js_loader" 
+onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); 
+clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' 
+width="1" height="1" style="display:none"></noscript></div>-->                    <!-- Meta Pixel Event Code -->
     <script type='text/javascript'>
         document.addEventListener( 'wpcf7mailsent', function( event ) {
         if( "fb_pxl_code" in event.detail.apiResponse){

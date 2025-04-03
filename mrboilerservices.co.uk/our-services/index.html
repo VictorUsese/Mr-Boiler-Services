@@ -173,13 +173,137 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
         }
     }
 </style>
+
+<style>
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-logo,
+    .mobile-logo {
+        height: 90px;
+        width: auto;
+        max-width: 150px;
+    }
+
+    /* Hide the second logo on larger screens */
+    .mobile-logo {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /* Ensure the second logo appears on mobile */
+    @media (max-width: 768px) {
+        .mobile-logo {
+            visibility: visible;
+            position: static;
+        }
+    }
+</style>
+
+<!-- CSS Styling -->
+<style>
+    /* Widget Styling */
+    #reviews-widget {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        font-family: Arial, sans-serif;
+    }
+
+    #toggle-reviews {
+        background: #F7931E; /* Mr Boiler Orange */
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #reviews-container {
+        display: none; /* Hidden by default */
+        width: 300px;
+        max-height: 350px;
+        overflow-y: auto;
+        background: #1A2B48; /* Mr Boiler Dark Blue */
+        color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #reviews-container h3 {
+        color: #F7931E;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .review {
+        background: #fff;
+        color: #000;
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .review .author {
+        font-weight: bold;
+    }
+
+    /* Responsive Design */
+   /* @media (max-width: 768px) {
+        #reviews-widget {
+            left: 10px;
+            bottom: 10px;
+        }
+
+        #reviews-container {
+            width: 260px;
+            max-height: 300px;
+        }
+    }*/
+
+   /* Hide the Google Reviews widget on mobile screens */
+@media (max-width: 768px) {
+    #google-reviews-widget {
+        display: none !important;
+    }
+}
+
+/* Adjust positioning to avoid overlap with WhatsApp widget */
+#google-reviews-widget {
+    position: fixed;
+    left: 20px;
+    bottom: 80px; /* Adjust this value if the WhatsApp widget is still too close */
+    z-index: 1000;
+}
+
+</style>
 </head>
 <body class="archive category category-case-studies category-3 wp-embed-responsive  oxygen-body" style="background-color: #3C3C3C;">
 
 
 
 
-<div id="div_block-21-8" class="ct-div-block"  style="background-color: #3C3C3C;"><!--<a id="link-22-8" class="ct-link top-bar-col" href="tel:01206912068"   ><div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div><div id="text_block-24-8" class="ct-text-block" >01206 978443</div></a><a id="link-25-8" class="ct-link top-bar-col" href="../contact-us/index.html"   ><div id="fancy_icon-26-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-26-8"><use xlink:href="#FontAwesomeicon-pencil"></use></svg></div><div id="text_block-27-8" class="ct-text-block" >Online Quote</div>--></a></div><header id="div_block-64-8" class="ct-div-block" style="background-color: #3C3C3C;" ><div id="div_block-60-8" class="ct-div-block inner-content" style="background-color: #3C3C3C;" ><a id="logo-link" class="ct-link" href="../../index.html" target="_self"  ><img  id="logo" alt="mr boiler services logo " src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" style="height: 90px; width: 150px;" class="ct-image" data-lazy-src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico"/><noscript><!--<img  id="logo" alt="mr boiler services logo " src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" class="ct-image"/>--></noscript></a><a id="div_block-44-8" class="ct-link header-cta-wrap" href="#"   ><img  id="image-100-8" alt="Gas safe logo" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image" data-lazy-src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png"/><noscript><img  id="image-100-8" alt="Gas safe" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/></noscript></a><a id="div_block-53-8" class="ct-link header-cta-wrap" href="tel:01206 978443"   ><img  id="image-55-8" alt="call" src="../wp-content/uploads/2022/08/call.svg" class="ct-image btn-call-img"/><div id="link_text-58-8" class="ct-text-block white-link text-top-margin" >01206 978443<br></div></a><a id="div_block-38-8" class="ct-link btn btn-green" href="../contact-us/index.html"   ><div id="text_block-39-8" class="ct-text-block" >Service Plans</div></a></div><div id="div_block-72-8" class="ct-div-block" >
+<div id="div_block-21-8" class="ct-div-block"  style="background-color: #3C3C3C;"><!--<a id="link-22-8" class="ct-link top-bar-col" href="tel:01206912068"   ><div id="fancy_icon-23-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-23-8"><use xlink:href="#FontAwesomeicon-phone"></use></svg></div><div id="text_block-24-8" class="ct-text-block" >01206 978443</div></a><a id="link-25-8" class="ct-link top-bar-col" href="../contact-us/index.html"   ><div id="fancy_icon-26-8" class="ct-fancy-icon top-bar-icon" ><svg id="svg-fancy_icon-26-8"><use xlink:href="#FontAwesomeicon-pencil"></use></svg></div><div id="text_block-27-8" class="ct-text-block" >Online Quote</div>--></a></div><header id="div_block-64-8" class="ct-div-block" style="background-color: #3C3C3C;"><div id="div_block-60-8" class="ct-div-block inner-content" style="background-color: #3C3C3C;"><a id="logo-link" class="ct-link" href="index.html" target="_self"  >
+    <div class="logo-container">
+        <img id="logo" alt="Mr Boiler Experts Logo" 
+            src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" 
+            class="ct-image main-logo" />
+    
+        <img id="mobile-logo" alt="Alternate Logo" 
+            src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png"
+            class="ct-image mobile-logo" />
+    </div><noscript><!--<img  id="logo" alt="mr boiler services logo " src="../wp-content/uploads/2023/08/mr-boiler-removebg-preview.ico" class="ct-image"/>--></noscript></a><a id="div_block-44-8" class="ct-link header-cta-wrap" href="#"   ><img  id="image-100-8" alt="Gas safe logo" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image" data-lazy-src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png"/><noscript><img  id="image-100-8" alt="Gas safe" src="../wp-content/uploads/2023/08/Gas-Safe-removebg-preview.png" class="ct-image"/></noscript></a><a id="div_block-53-8" class="ct-link header-cta-wrap" href="tel:01206 978443"   ><img  id="image-55-8" alt="call" src="../wp-content/uploads/2022/08/mr-boiler-call-1.png" class="ct-image btn-call-img"/><div id="link_text-58-8" class="ct-text-block white-link text-top-margin" >01206 978443<br></div></a><a id="div_block-38-8" class="ct-link btn btn-green" href="../boiler-servicing-plans/index.html"   ><div id="text_block-39-8" class="ct-text-block" >Boiler Service Plans</div></a></div><div id="div_block-72-8" class="ct-div-block" >
 		<div id="-pro-menu-73-8" class="oxy-pro-menu " ><div class="oxy-pro-menu-mobile-open-icon " data-off-canvas-alignment=""><svg id="-pro-menu-73-8-open-icon"><use xlink:href="#FontAwesomeicon-bars"></use></svg></div>
 
                 
@@ -231,7 +355,7 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
                 jQuery(this).append('<div class="oxy-pro-menu-dropdown-icon-click-area"></div>');
             });			</script></div></header><!--<section id="section-2-215" class=" ct-section" ><div data-rocket-location-hash="387d5583d2cceb1f8d89ccadfb2764c5" class="ct-section-inner-wrap"><div id="div_block-89-215" class="ct-div-block page-title-h1-bg-no-hover" ><h1 id="headline-3-215" class="ct-headline center-element centered-text page-title-h1"><span id="span-77-215" class="ct-span" >Case Studies</span></h1></div></div></section>-->
 <section id="section-47-215" class=" ct-section" ><div data-rocket-location-hash="95d405c58f2be610c435a5a9c908ea71" class="ct-section-inner-wrap"><div data-rocket-location-hash="c66b80bd0c752ea017e0c0c56556029d" id="_dynamic_list-48-215" class="oxy-dynamic-list three-col-repeater"><div id="div_block-49-215-1" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-1" class="ct-link bpost-card" href="./boiler-servicing-&-repairs/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-1" alt="boiler servicin" src="../wp-content/uploads/2023/11/Intergas service.jpeg" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="../wp-content/uploads/2023/11/Intergas service.jpeg"><noscript><img id="image-51-215-1" alt="boiler servicing" src="../wp-content/uploads/2023/11/Intergas service.jpeg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-1" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-1" class="ct-span" data-id="span-53-215">Boiler Servicing & Repairs</span></h3></a></div>
-<div id="div_block-49-215-2" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-2" class="ct-link bpost-card" href="./Central-heating-installations/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-2" alt="Central heating installations" src="../wp-content/uploads/2023/07/Boiler-service-ideal-logic.jpg" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="../wp-content/uploads/2023/07/Boiler-service-ideal-logic.jpg"><noscript><img id="image-51-215-2" alt="central heating installations" src="../wp-content/uploads/2023/07/Boiler-service-ideal-logic.jpg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-2" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-2" class="ct-span" data-id="span-53-215">Central Heating Installations</span></h3></a></div><div id="div_block-49-215-3" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-3" class="ct-link bpost-card" href="./Gas-boiler-installations/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-3" alt="gas boiler installations" src="../wp-content/uploads/2023/03/Intergas-boiler-service.jpg" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="../wp-content/uploads/2023/03/Intergas-boiler-service.jpg"><noscript><img id="image-51-215-3" alt="gas boiler installations" src="../wp-content/uploads/2023/03/Intergas-boiler-service.jpg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-3" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-3" class="ct-span" data-id="span-53-215">Gas Boiler Installations</span></h3></a></div><div id="div_block-49-215-4" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-4" class="ct-link bpost-card" href="./Gas-safety-checks/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-4" alt="gas safety checks" src="../wp-content/uploads/2023/02/Baxi Service.jpeg" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="../wp-content/uploads/2023/02/Baxi Service.jpeg"><noscript><img id="image-51-215-4" alt="gas safety checks" src="../wp-content/uploads/2023/02/Baxi Service.jpeg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-4" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-4" class="ct-span" data-id="span-53-215">Gas Safety Checks</span></h3></a></div><!--<div id="div_block-49-215-5" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-5" class="ct-link bpost-card" href="january-2023-a-selection-of-great-projects-to-start-the-new-year/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-5" alt="january 2023 a selection of great projects to start the new year" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="https://elementisboilerexperts.com/wp-content/uploads/2023/01/January-2023-A-Selection-of-Great-Projects-to-Start-the-New-Year.jpg"><noscript><img id="image-51-215-5" alt="january 2023 a selection of great projects to start the new year" src="../wp-content/uploads/2023/01/January-2023-A-Selection-of-Great-Projects-to-Start-the-New-Year.jpg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-5" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-5" class="ct-span" data-id="span-53-215">January 2023 - A Selection of Great Projects to Start the New Year</span></h3></a></div><div id="div_block-49-215-6" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-6" class="ct-link bpost-card" href="ashley-page-colchester/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-6" alt="back boiler removal" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="https://elementisboilerexperts.com/wp-content/uploads/2022/11/Back-boiler-removal.jpg"><noscript><img id="image-51-215-6" alt="back boiler removal" src="../wp-content/uploads/2022/11/Back-boiler-removal.jpg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-6" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-6" class="ct-span" data-id="span-53-215">Ashley Page - Colchester</span></h3></a></div>-->                    
+<div id="div_block-49-215-2" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-2" class="ct-link bpost-card" href="./Central-heating-installations/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-2" alt="Central heating installations" src="../wp-content/uploads/2023/07/Boiler-service-ideal-logic.jpg" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="../wp-content/uploads/2023/07/Boiler-service-ideal-logic.jpg"><noscript><img id="image-51-215-2" alt="central heating installations" src="../wp-content/uploads/2023/07/Boiler-service-ideal-logic.jpg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-2" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-2" class="ct-span" data-id="span-53-215">Plumbing & Heating Installations</span></h3></a></div><div id="div_block-49-215-3" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-3" class="ct-link bpost-card" href="./Gas-boiler-installations/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-3" alt="gas boiler installations" src="../wp-content/uploads/2023/03/Intergas-boiler-service.jpg" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="../wp-content/uploads/2023/03/Intergas-boiler-service.jpg"><noscript><img id="image-51-215-3" alt="gas boiler installations" src="../wp-content/uploads/2023/03/Intergas-boiler-service.jpg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-3" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-3" class="ct-span" data-id="span-53-215">Gas Boiler Installations</span></h3></a></div><div id="div_block-49-215-4" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-4" class="ct-link bpost-card" href="./Gas-safety-checks/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-4" alt="gas safety checks" src="../wp-content/uploads/2023/02/Baxi Service.jpeg" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="../wp-content/uploads/2023/02/Baxi Service.jpeg"><noscript><img id="image-51-215-4" alt="gas safety checks" src="../wp-content/uploads/2023/02/Baxi Service.jpeg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-4" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-4" class="ct-span" data-id="span-53-215">Gas Safety Checks</span></h3></a></div><!--<div id="div_block-49-215-5" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-5" class="ct-link bpost-card" href="january-2023-a-selection-of-great-projects-to-start-the-new-year/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-5" alt="january 2023 a selection of great projects to start the new year" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="https://elementisboilerexperts.com/wp-content/uploads/2023/01/January-2023-A-Selection-of-Great-Projects-to-Start-the-New-Year.jpg"><noscript><img id="image-51-215-5" alt="january 2023 a selection of great projects to start the new year" src="../wp-content/uploads/2023/01/January-2023-A-Selection-of-Great-Projects-to-Start-the-New-Year.jpg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-5" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-5" class="ct-span" data-id="span-53-215">January 2023 - A Selection of Great Projects to Start the New Year</span></h3></a></div><div id="div_block-49-215-6" class="ct-div-block " data-id="div_block-49-215"><a id="link-50-215-6" class="ct-link bpost-card" href="ashley-page-colchester/index.html" target="_self" data-id="link-50-215"><img id="image-51-215-6" alt="back boiler removal" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image bpost-card-img" data-id="image-51-215" data-lazy-src="https://elementisboilerexperts.com/wp-content/uploads/2022/11/Back-boiler-removal.jpg"><noscript><img id="image-51-215-6" alt="back boiler removal" src="../wp-content/uploads/2022/11/Back-boiler-removal.jpg" class="ct-image bpost-card-img" data-id="image-51-215"></noscript><h3 id="headline-52-215-6" class="ct-headline" data-id="headline-52-215"><span id="span-53-215-6" class="ct-span" data-id="span-53-215">Ashley Page - Colchester</span></h3></a></div>-->                    
                                             
                                         <div class="oxy-repeater-pages-wrap">
                         <!--<div class="oxy-repeater-pages">
@@ -274,13 +398,71 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
     <div class="footer-bottom">
         <p>&copy; 2024 Mr Boiler Services. All rights reserved.</p>
     </div>
+
+
+
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div id="reviews-widget" class="elfsight-app-43da90fe-1037-4f66-868b-729192cbad5c" data-elfsight-app-lazy></div>
+
+    <!-- Google Reviews Widget -->
+<!--<div id="reviews-widget">
+    <button id="toggle-reviews">5.0⭐⭐⭐⭐⭐<br>GOOGLE RATINGS</button>
+    <div id="reviews-container">
+        <h3>Mr. Boiler Services Customer Reviews</h3>
+        <div id="reviews"></div>
+    </div>
+</div>-->
+
+<!-- JavaScript Code to Fetch Google Reviews & Toggle Widget -->
+<script>
+    async function fetchReviews() {
+        const placeID = "ChIJ3VFpEAUbiSwRZK7ABvi2QgY"; // Replace with Mr Boiler's Place ID
+        const apiKey = "AIzaSyBD9T4qBJIjNnoSl-zpTtR9U8FWthvh_N8"; // Replace with your Google API Key
+        const url = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${placeID}&fields=reviews&key=${apiKey}`;
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+
+            if (data.result.reviews) {
+                const reviewsContainer = document.getElementById("reviews");
+                reviewsContainer.innerHTML = ""; // Clear previous reviews
+                
+                data.result.reviews.forEach(review => {
+                    const reviewHTML = `
+                        <div class="review">
+                            <p class="author">${review.author_name} - ⭐${review.rating}</p>
+                            <p>${review.text}</p>
+                        </div>
+                    `;
+                    reviewsContainer.innerHTML += reviewHTML;
+                });
+            } else {
+                document.getElementById("reviews").innerHTML = "<p>No reviews found.</p>";
+            }
+        } catch (error) {
+            console.error("Error fetching reviews:", error);
+            document.getElementById("reviews").innerHTML = "<p>Failed to load reviews.</p>";
+        }
+    }
+
+    // Toggle widget visibility
+    document.getElementById("toggle-reviews").addEventListener("click", function () {
+        const reviewsContainer = document.getElementById("reviews-container");
+        reviewsContainer.style.display = (reviewsContainer.style.display === "none" || reviewsContainer.style.display === "") ? "block" : "none";
+    });
+
+    // Fetch reviews on page load
+    fetchReviews();
+</script>
     <div id="shortcode-75-8" class="ct-shortcode" >               <div  class="rplg" style="" data-id="1199"><div  class="rplg-badge-cnt                     rplg-badge_left-fixed                                         rplg-badge-hide        "><div class="rplg-badge2"                                data-provider="google"            ><div class="rplg-badge2-border"></div>
-    <div class="rplg-badge2-btn rplg-badge2-clickable"                                    ><span class="rplg-badge-logo"></span><div class="rplg-badge2-score">
+    <!--<div class="rplg-badge2-btn rplg-badge2-clickable"                                    ><span class="rplg-badge-logo"></span><div class="rplg-badge2-score">
         <div>                        Google Rating                        </div>
     <div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div><div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 54 reviews</span></div></div></div></div>
     <div class="rplg-form rplg-form-left" style="display:none"><div class="rplg-form-head"><div class="rplg-form-head-inner"><div class="rplg-row"><div class="rplg-row-left">
     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" class="rplg-review-avatar" alt="Mr Boiler Services" width="50" height="50" title="Mr Boiler Services" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" data-lazy-src="#" ><noscript><img src="#" loading="lazy" class="rplg-review-avatar" alt="Mr Boiler Services" width="50" height="50" title="Mr Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" ></noscript></div>
-    <div class="rplg-form-footer"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%2018'%3E%3C/svg%3E" alt="powered by Google" width="144" height="18" title="powered by Google" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png"><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png" alt="powered by Google" width="144" height="18" title="powered by Google"></noscript></div></div><div class="rplg-badge2-close">×</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none"></noscript></div>                </div></div></footer>	<!-- WP_FOOTER -->
+    <div class="rplg-form-footer"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%2018'%3E%3C/svg%3E" alt="powered by Google" width="144" height="18" title="powered by Google" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png"><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png" alt="powered by Google" width="144" height="18" title="powered by Google"></noscript></div></div><div class="rplg-badge2-close">×</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none"></noscript></div>                </div></div>--></footer>	<!-- WP_FOOTER -->
 <style>.ct-FontAwesomeicon-close{width:0.78571428571429em}</style>
 <style>.ct-FontAwesomeicon-pencil{width:0.85714285714286em}</style>
 <style>.ct-FontAwesomeicon-phone{width:0.78571428571429em}</style>
@@ -288,9 +470,9 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
 <style>.ct-FontAwesomeicon-caret-down{width:0.57142857142857em}</style>
 <?xml version="1.0"?><svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"><defs><symbol id="FontAwesomeicon-close" viewBox="0 0 22 28">
 <title>close</title><path d="M20.281 20.656c0 0.391-0.156 0.781-0.438 1.062l-2.125 2.125c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-4.594-4.594-4.594 4.594c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-2.125-2.125c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l4.594-4.594-4.594-4.594c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.594 4.594-4.594c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062s-0.156 0.781-0.438 1.062l-4.594 4.594 4.594 4.594c0.281 0.281 0.438 0.672 0.438 1.062z"/></symbol><symbol id="FontAwesomeicon-pencil" viewBox="0 0 24 28"><title>pencil</title><path d="M5.672 24l1.422-1.422-3.672-3.672-1.422 1.422v1.672h2v2h1.672zM13.844 9.5c0-0.203-0.141-0.344-0.344-0.344-0.094 0-0.187 0.031-0.266 0.109l-8.469 8.469c-0.078 0.078-0.109 0.172-0.109 0.266 0 0.203 0.141 0.344 0.344 0.344 0.094 0 0.187-0.031 0.266-0.109l8.469-8.469c0.078-0.078 0.109-0.172 0.109-0.266zM13 6.5l6.5 6.5-13 13h-6.5v-6.5zM23.672 8c0 0.531-0.219 1.047-0.578 1.406l-2.594 2.594-6.5-6.5 2.594-2.578c0.359-0.375 0.875-0.594 1.406-0.594s1.047 0.219 1.422 0.594l3.672 3.656c0.359 0.375 0.578 0.891 0.578 1.422z"/></symbol><symbol id="FontAwesomeicon-phone" viewBox="0 0 22 28"><title>phone</title><path d="M22 19.375c0 0.562-0.25 1.656-0.484 2.172-0.328 0.766-1.203 1.266-1.906 1.656-0.922 0.5-1.859 0.797-2.906 0.797-1.453 0-2.766-0.594-4.094-1.078-0.953-0.344-1.875-0.766-2.734-1.297-2.656-1.641-5.859-4.844-7.5-7.5-0.531-0.859-0.953-1.781-1.297-2.734-0.484-1.328-1.078-2.641-1.078-4.094 0-1.047 0.297-1.984 0.797-2.906 0.391-0.703 0.891-1.578 1.656-1.906 0.516-0.234 1.609-0.484 2.172-0.484 0.109 0 0.219 0 0.328 0.047 0.328 0.109 0.672 0.875 0.828 1.188 0.5 0.891 0.984 1.797 1.5 2.672 0.25 0.406 0.719 0.906 0.719 1.391 0 0.953-2.828 2.344-2.828 3.187 0 0.422 0.391 0.969 0.609 1.344 1.578 2.844 3.547 4.813 6.391 6.391 0.375 0.219 0.922 0.609 1.344 0.609 0.844 0 2.234-2.828 3.187-2.828 0.484 0 0.984 0.469 1.391 0.719 0.875 0.516 1.781 1 2.672 1.5 0.313 0.156 1.078 0.5 1.188 0.828 0.047 0.109 0.047 0.219 0.047 0.328z"/></symbol><symbol id="FontAwesomeicon-bars" viewBox="0 0 24 28"><title>bars</title><path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"/></symbol><symbol id="FontAwesomeicon-caret-down" viewBox="0 0 16 28"><title>caret-down</title><path d="M16 11c0 0.266-0.109 0.516-0.297 0.703l-7 7c-0.187 0.187-0.438 0.297-0.703 0.297s-0.516-0.109-0.703-0.297l-7-7c-0.187-0.187-0.297-0.438-0.297-0.703 0-0.547 0.453-1 1-1h14c0.547 0 1 0.453 1 1z"/></symbol></defs></svg>                <div class="rplg" style="" data-id="1199"><div class="rplg-badge-cnt                     rplg-badge_left-fixed                                         rplg-badge-hide        "><div class="rplg-badge2"                                data-provider="google"            ><div class="rplg-badge2-border"></div>
-<div class="rplg-badge2-btn rplg-badge2-clickable"                                    >
+<!--<div class="rplg-badge2-btn rplg-badge2-clickable"                                    >
     <span class="rplg-badge-logo"></span><div class="rplg-badge2-score">
-<div>                        Google Rating                        </div><div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div><div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 54 reviews</span></div></div></div></div><div class="rplg-form rplg-form-left" style="display:none"><div class="rplg-form-head"><div class="rplg-form-head-inner"><div class="rplg-row"><div class="rplg-row-left"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" ><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" loading="lazy" class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" ></noscript></div><!--<div class="rplg-row-right rplg-trim">                                    Elementis Boiler Experts        <div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div></div><div class="wp-google-wr"><a href="https://search.google.com/local/writereview?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" rel="noopener nofollow" onclick="_rplg_popup(this.href, 800, 600);return !1">review us on<span data-logo="google"></span></a><a href="https://search.google.com/local/reviews?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" target="_blank" rel="noopener" onclick="return true;">See all reviews</a></div></div></div></div><button class="rplg-form-close" type="button" onclick="_rplg_get_parent(this, 'rplg-form').style.display='none'"></button></div>--><div class="rplg-form-footer"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%2018'%3E%3C/svg%3E" alt="powered by Google" width="144" height="18" title="powered by Google" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png"><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png" alt="powered by Google" width="144" height="18" title="powered by Google"></noscript></div></div><div class="rplg-badge2-close">×</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none"></noscript></div>                    <!-- Meta Pixel Event Code -->
+<div>                        Google Rating                        </div><div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div><div class="rplg-biz-based rplg-trim"><span class="rplg-biz-based-text">Based on 54 reviews</span></div></div></div></div><div class="rplg-form rplg-form-left" style="display:none"><div class="rplg-form-head"><div class="rplg-form-head-inner"><div class="rplg-row"><div class="rplg-row-left"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E" class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" ><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/gmblogo.svg" loading="lazy" class="rplg-review-avatar" alt="Elementis Boiler Experts" width="50" height="50" title="Elementis Boiler Experts" onerror="if(this.src!='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';" ></noscript></div>--><!--<div class="rplg-row-right rplg-trim">                                    Elementis Boiler Experts        <div ><div class="rplg-biz-rating rplg-trim rplg-biz-google"><div class="rplg-biz-score" >5.0</div><div class="rplg-stars" data-info="5.0,google,"></div></div></div><div class="wp-google-wr"><a href="https://search.google.com/local/writereview?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" rel="noopener nofollow" onclick="_rplg_popup(this.href, 800, 600);return !1">review us on<span data-logo="google"></span></a><a href="https://search.google.com/local/reviews?placeid=ChIJm0WFtBkF2UcRgXt-caUs1HQ" target="_blank" rel="noopener" onclick="return true;">See all reviews</a></div></div></div></div><button class="rplg-form-close" type="button" onclick="_rplg_get_parent(this, 'rplg-form').style.display='none'"></button></div>--><div class="rplg-form-footer"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20144%2018'%3E%3C/svg%3E" alt="powered by Google" width="144" height="18" title="powered by Google" data-lazy-src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png"><noscript><img src="wp-content/plugins/business-reviews-bundle/assets/img/powered_by_google_on_white.png" alt="powered by Google" width="144" height="18" title="powered by Google"></noscript></div></div><div class="rplg-badge2-close">×</div></div></div><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none" data-lazy-src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="js_loader" onload="(function(el, args) { var t = setInterval(function () { if (window.rplg_init_badge_theme){ rplg_init_badge_theme(el, args); clearInterval(t); } }, 200); })(this.parentNode);" data-exec="false" data-func="rplg_init_badge_theme" data-args='' width="1" height="1" style="display:none"></noscript></div>                    <!-- Meta Pixel Event Code -->
     <script type='text/javascript'>
         document.addEventListener( 'wpcf7mailsent', function( event ) {
         if( "fb_pxl_code" in event.detail.apiResponse){
