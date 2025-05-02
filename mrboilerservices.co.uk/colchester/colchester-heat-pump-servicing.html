@@ -347,6 +347,130 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
 
   gtag('config', 'G-WSTWYMBVJ4');
 </script>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    section:nth-child(even) {
+      background-color: #f1f5f9;
+    }
+    section:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    .faq-item {
+      border-bottom: 1px solid #ccc;
+      padding: 1rem 0;
+    }
+    .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .faq-answer {
+      display: none;
+      padding-top: 0.5rem;
+    }
+    .booking-form {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .booking-form input,
+    .booking-form textarea,
+    .booking-form button {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .booking-form button {
+      background-color: #003366;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .sticky-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff6600;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .highlights {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .highlight {
+      flex: 1;
+      min-width: 250px;
+      background: #e8f0fe;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .highlight i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #003366;
+    }
+    .testimonial-carousel {
+      overflow: hidden;
+      position: relative;
+      height: 150px;
+    }
+    .testimonial {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+    .testimonial.active {
+      opacity: 1;
+      position: relative;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body class="page-template-default page page-id-11 page-parent wp-embed-responsive  oxygen-body" style="background-color: #3C3C3C;">
 
@@ -397,7 +521,7 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
 <!--<li id="menu-item-178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-178"><a title="Elementis Boiler Experts Reviews" href="../reviews/index.html">Reviews</a></li>
 <li id="menu-item-274" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-274"><a href="../case-studies/index.html">Case Studies</a></li>
 <li id="menu-item-179" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-179"><a href="../advice/index.html">Help &amp; Advice</a></li>-->
-<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-175"><a title="Contact Mr Boiler Services" href="index.html" aria-current="page">Contact Us</a></li>
+<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-175"><a title="Contact Mr Boiler Services" href="../contact-us/index.html" aria-current="page">Contact Us</a></li>
 </ul></div>
             <div class="oxy-pro-menu-mobile-close-icon"><svg id="svg--pro-menu-73-8"><use xlink:href="#FontAwesomeicon-close"></use></svg></div>
 
@@ -413,31 +537,107 @@ function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
                 jQuery(this).append('<div class="oxy-pro-menu-dropdown-icon-click-area"></div>');
             });			</script></div></header>
 
-<section class="contact-section">
-    <div class="contact-container">
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you. Reach out to us using the form below or through our contact details.</p>
+<header>
+    <h1>Colchester Heat Pump Servicing</h1>
+    <p>Efficient & Reliable Heat Pump Services in Colchester</p>
+  </header>
 
-        <div class="contact-details">
-            <p><strong>Phone:</strong> 01206 978443 / 07791209303</p>
-            <p><strong>Email:</strong> <a href="mailto:mrboilerservices@gmail.com">mrboilerservices@gmail.com</a></p>
-            <p><strong>Address:</strong> 10 London Road, Stanway, Colchester, CO3 0HA</p>
-        </div>
-
-        <form class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
+  <section class="fade-in">
+    <h2>Why Choose Us?</h2>
+    <div class="highlights">
+      <div class="highlight">
+        <i class="fas fa-bolt"></i>
+        <h4>Fast Response</h4>
+        <p>We respond quickly and efficiently to your service needs.</p>
+      </div>
+      <div class="highlight">
+        <i class="fas fa-user-shield"></i>
+        <h4>Certified Engineers</h4>
+        <p>Our technicians are licensed and experienced professionals.</p>
+      </div>
+      <div class="highlight">
+        <i class="fas fa-pound-sign"></i>
+        <h4>Affordable Pricing</h4>
+        <p>High quality services at a budget-friendly rate.</p>
+      </div>
     </div>
-</section>
+  </section>
+
+  <section class="fade-in">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-question">How often should I service my heat pump?</div>
+      <div class="faq-answer">We recommend servicing your heat pump at least once a year to ensure optimal performance and longevity.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What does the service include?</div>
+      <!--<div class="faq-answer">We check for refrigerant levels, clean coils, test system controls, and ensure the unit is running at peak efficiency.</div>
+    </div>-->
+    <div class="faq-item">
+      <div class="faq-question">How long does a typical service take?</div>
+      <div class="faq-answer">On average, a service visit takes between 1 to 2 hours depending on your system’s condition.</div>
+    </div>
+  </section>
+
+  <section class="fade-in">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial active">“Fantastic service – our heat pump has never worked better!” – Rachel, Colchester</div>
+      <div class="testimonial">“Professional and punctual. Highly recommend!” – James W.</div>
+      <div class="testimonial">“Very affordable and efficient. I’m very impressed.” – Lisa T.</div>
+    </div>
+  </section>
+
+  <section class="fade-in">
+    <h2>Book a Service</h2>
+    <form class="booking-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <textarea rows="4" placeholder="Your Message or Preferred Date"></textarea>
+      <button type="submit">Request Service</button>
+    </form>
+  </section>
+
+  <section class="fade-in">
+    <h2>Our Service Area</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9882.1872448407!2d0.901!3d51.889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b1ac63a9db23%3A0x4c1fdadf3086f177!2sColchester%2C%20UK!5e0!3m2!1sen!2suk!4v1610000000000"></iframe>
+  </section>
+
+  <div class="sticky-cta"><a href="../boiler-servicing-plans/index.html">Book Now</a></div>
+
+  <script>
+    // Accordion functionality
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const answer = item.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // Scroll animation
+    const fadeIns = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+    fadeIns.forEach(el => observer.observe(el));
+
+    // Testimonial carousel
+    const testimonials = document.querySelectorAll('.testimonial');
+    let testimonialIndex = 0;
+    setInterval(() => {
+      testimonials[testimonialIndex].classList.remove('active');
+      testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+      testimonials[testimonialIndex].classList.add('active');
+    }, 4000);
+  </script>
+
 <!--<div id='inner_content-7-8' class='ct-inner-content'><div id="" class="ct-div-block" >
 <section id="section-8-11" class=" ct-section" ><div class="ct-section-inner-wrap"><div id="div_block-49-11" class="ct-div-block margin-bottom-s page-title-h1-bg-no-hover" ><h1 id="headline-9-11" class="ct-headline page-title-h1">Contact Us</h1></div><div id="text_block-11-11" class="ct-text-block text-width-s" >Whether you are looking for expert advice or to get a quote, please get in touch with our friendly team today.<br></div><div id="div_block-13-11" class="ct-div-block" ><div id="div_block-14-11" class="ct-div-block contact-col" ><img  id="image-17-11" alt="boiler survey" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image contact-img" data-lazy-src="https://mrboilerservices.co.uk/wp-content/uploads/2023/08/boiler-survey.svg"/><noscript><img  id="image-17-11" alt="boiler survey" src="../wp-content/uploads/2023/08/boiler-survey.svg" class="ct-image contact-img"/></noscript><div id="text_block-50-11" class="ct-text-block contact-h2" >New Boiler Quote</div><a id="link-20-11" class="ct-link btn btn-green center-element" href="https://book.servicem8.com/request_service_online_booking?strVendorUUID=a989ab29-bf3d-49df-bb89-1cd51c1fbe1b#64383eb2-0f6a-4e74-9052-2014c34a717b" target="_blank" rel="noopener" ><div id="text_block-21-11" class="ct-text-block" >Book Quote Here</div></a></div><div id="div_block-23-11" class="ct-div-block contact-col" ><img  id="image-24-11" alt="general enquiry" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image contact-img" data-lazy-src="https://mrboilerservices.co.uk/wp-content/uploads/2023/08/general-enquiry.svg"/><noscript><img  id="image-24-11" alt="general enquiry" src="../wp-content/uploads/2023/08/general-enquiry.svg" class="ct-image contact-img"/></noscript><h2 id="headline-25-11" class="ct-headline contact-h2">General Enquiry</h2><a id="link-26-11" class="ct-link btn btn-green center-element" href="http://bit.ly/43oPney" target="_self" rel="noopener" ><div id="text_block-27-11" class="ct-text-block" >Start Now</div></a></div><div id="div_block-33-11" class="ct-div-block contact-col" ><img  id="image-34-11" alt="email" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image contact-img" data-lazy-src="https://mrboilerservices.co.uk/wp-content/uploads/2022/08/email.svg"/><noscript><img  id="image-34-11" alt="email" src="../wp-content/uploads/2022/08/email.svg" class="ct-image contact-img"/></noscript><h2 id="headline-35-11" class="ct-headline contact-h2">Email</h2><a id="link-36-11" class="ct-link btn btn-green center-element" href="mailto:info@mrboilerservices.co.uk"   ><div id="text_block-37-11" class="ct-text-block" >Click Here</div></a></div><div id="div_block-28-11" class="ct-div-block contact-col" ><img  id="image-29-11" alt="call" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="ct-image contact-img" data-lazy-src="https://mrboilerservices.co.uk/wp-content/uploads/2022/08/call-1.svg"/><noscript><img  id="image-29-11" alt="call" src="../wp-content/uploads/2022/08/call-1.svg" class="ct-image contact-img"/></noscript><h2 id="headline-30-11" class="ct-headline contact-h2">Phone</h2><a id="link_text-45-11" class="ct-link-text " href="tel:01206912068"   >Call 01206 912 068<br></a></div></div></div></section></div>--><!--<div id="code_block-48-11" class="ct-code-block" ><iframe src="about:blank" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d630896.1953465014!2d0.5319329536799214!3d51.85295399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d90519b485459b%3A0x74d42ca5717e7b81!2sElementis%20Boiler%20Experts!5e0!3m2!1sen!2suk!4v1692717407949!5m2!1sen!2suk"></iframe><noscript><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d630896.1953465014!2d0.5319329536799214!3d51.85295399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d90519b485459b%3A0x74d42ca5717e7b81!2sElementis%20Boiler%20Experts!5e0!3m2!1sen!2suk!4v1692717407949!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></noscript></div><div id="div_block-51-11" class="ct-div-block" ><div id="text_block-52-11" class="ct-text-block" >Elementis Boiler Experts LTD<br>2a Colchester Road, Clacton-on-sea, CO16 8HA<br>Tel: 01206 912068<br>Email: info@mrboilerservices.co.uk<br>Website: www.mrboilerservices.co.uk<br>VAT Registration number: 373674761<br>Company registration number: 1249 6015. Registered in England &amp; Wales</div></div></div>--><footer class="footer">
             <div class="footer-container">
