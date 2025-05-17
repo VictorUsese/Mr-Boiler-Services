@@ -1,0 +1,23 @@
+{
+  "name": "mr-boiler-services",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/VictorUsese/Mr-Boiler-Services#readme",
+  "bugs": {
+    "url": "https://github.com/VictorUsese/Mr-Boiler-Services/issues"
+  },
+  "repository": {
+    "type": "module",
+    "url": "https://github.com/VictorUsese/Mr-Boiler-Services.git"
+  },
+  "license": "ISC",
+  "author": "Mr Boiler Services",
+  "type": "commonjs",
+  "main": "goCardless.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gocardless-nodejs": "^4.6.0"
+  }
+}
